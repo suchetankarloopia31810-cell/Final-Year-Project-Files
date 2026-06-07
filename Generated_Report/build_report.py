@@ -322,122 +322,107 @@ print("Builder part 1 (setup + helpers) loaded OK.")
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-#  TITLE PAGE
+#  TITLE PAGES  (Outer + Inner, per Annexure-I format)
 # ═════════════════════════════════════════════════════════════════════════════
-P(doc, 'DEVELOPMENT AND CHARACTERIZATION OF BIO-COMPOSITES',
-  size=16, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT,
-  space_before=6, space_after=2)
-P(doc, 'FROM WASTE AQUATIC BIOMASS FOR SUSTAINABLE INSULATION',
-  size=16, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT,
-  space_after=14)
+TITLE_FULL = ("DEVELOPMENT AND CHARACTERIZATION OF BIO-COMPOSITES FROM "
+              "WASTE AQUATIC BIOMASS FOR SUSTAINABLE INSULATION")
 
-P(doc, 'A Project Report submitted in partial fulfilment of the requirements',
-  size=12, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=0)
-P(doc, 'for the award of the degree of', size=12,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=6)
-P(doc, 'BACHELOR OF TECHNOLOGY', size=14, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'in', size=12, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'CHEMICAL ENGINEERING', size=14, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=14)
+def title_page(doc):
+    P(doc, TITLE_FULL, size=16, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER,
+      color=ACCENT, space_before=18, space_after=18)
+    P(doc, 'A PROJECT', size=13, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER,
+      space_after=14)
+    P(doc, 'Submitted in partial fulfillment of the requirements for',
+      size=12, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=0)
+    P(doc, 'the award of the degree of', size=12,
+      align=WD_ALIGN_PARAGRAPH.CENTER, space_after=8)
+    P(doc, 'BACHELOR OF TECHNOLOGY', size=14, bold=True,
+      align=WD_ALIGN_PARAGRAPH.CENTER, space_after=10)
+    P(doc, 'By', size=12, align=WD_ALIGN_PARAGRAPH.CENTER, space_after=8)
+    for nm, en in [("SUCHETAN KARLOOPIA", "2022BCHE019"),
+                   ("MIRAN HAIDER", "2022BCHE027"),
+                   ("AKSHITA SEN", "2022BCHE037")]:
+        P(doc, nm, size=12.5, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER,
+          space_after=0)
+        P(doc, f'(Registration Number: {en})', size=11,
+          align=WD_ALIGN_PARAGRAPH.CENTER, space_after=8)
+    P(doc, 'Under the guidance', size=12, align=WD_ALIGN_PARAGRAPH.CENTER,
+      space_before=8, space_after=0)
+    P(doc, 'Of  Dr. Fasil Qayoom Mir', size=12, bold=True,
+      align=WD_ALIGN_PARAGRAPH.CENTER, space_after=14)
+    P(doc, 'DEPARTMENT OF CHEMICAL ENGINEERING', size=13, bold=True,
+      align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=2)
+    P(doc, 'NATIONAL INSTITUTE OF TECHNOLOGY', size=13, bold=True,
+      align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=2)
+    P(doc, 'SRINAGAR \u2013 190006 (INDIA)', size=12, bold=True,
+      align=WD_ALIGN_PARAGRAPH.CENTER, space_after=8)
+    P(doc, 'June, 2026', size=12, bold=True,
+      align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
 
-P(doc, 'Submitted by', size=12, italic=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=6)
-P(doc, 'Suchetan Karloopia          (2022BCHE019)', size=12.5, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'Miran Haider                    (2022BCHE027)', size=12.5, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'Akshita Sen                      (2022BCHE037)', size=12.5, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=14)
-
-P(doc, 'Under the supervision of', size=12, italic=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=6)
-P(doc, 'Dr. Fasil Qayoom Mir', size=13.5, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'Head & Associate Professor', size=12,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'Department of Chemical Engineering', size=12,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=14)
-
-# Institute crest placeholder / name
-P(doc, 'DEPARTMENT OF CHEMICAL ENGINEERING', size=13, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=2)
-P(doc, 'NATIONAL INSTITUTE OF TECHNOLOGY SRINAGAR', size=13, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=2)
-P(doc, 'Hazratbal, Srinagar – 190006, Jammu & Kashmir, India', size=12,
-  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
-P(doc, 'JUNE 2026', size=13, bold=True,
+# Outer title page
+title_page(doc)
+page_break(doc)
+# Inner title page
+title_page(doc)
+# Copyright (on reverse side of inner title page)
+P(doc, 'COPYRIGHT \u00a9 NIT SRINAGAR (J&K), INDIA, 2026', size=12, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, space_before=24, space_after=2)
+P(doc, 'All rights reserved.', size=11, italic=True,
   align=WD_ALIGN_PARAGRAPH.CENTER, space_after=2)
 page_break(doc)
 
 # ═════════════════════════════════════════════════════════════════════════════
-#  CANDIDATE'S DECLARATION
+#  CANDIDATE'S DECLARATION  (with Supervisor Certificate + Viva-Voce)
 # ═════════════════════════════════════════════════════════════════════════════
-P(doc, "CANDIDATES' DECLARATION", size=15, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=12)
+P(doc, "NATIONAL INSTITUTE OF TECHNOLOGY SRINAGAR (J&K)", size=12.5, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
+P(doc, "CANDIDATES' DECLARATION", size=14, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, space_after=10)
 hrule(doc)
-P(doc, "We hereby declare that the work presented in this project report entitled "
-  "\u201cDevelopment and Characterization of Bio-Composites from Waste Aquatic "
-  "Biomass for Sustainable Insulation\u201d, submitted to the Department of "
-  "Chemical Engineering, National Institute of Technology Srinagar, in partial "
-  "fulfilment of the requirements for the award of the degree of Bachelor of "
-  "Technology in Chemical Engineering, is an authentic record of our own work "
-  "carried out during the period August 2025 to June 2026 under the supervision "
-  "of Dr. Fasil Qayoom Mir, Head and Associate Professor, Department of Chemical "
-  "Engineering, NIT Srinagar.",
+P(doc, "We hereby certify that the work which is being presented in the project "
+  "titled \u201c" + TITLE_FULL.title() + "\u201d in partial fulfillment of the "
+  "requirements for the award of the Degree of Bachelor of Technology and "
+  "submitted in the Department of Chemical Engineering, National Institute of "
+  "Technology Srinagar, is an authentic record of our own work carried out "
+  "during a period from August 2025 to June 2026 under the supervision of "
+  "Dr. Fasil Qayoom Mir, Head & Associate Professor, Department of Chemical "
+  "Engineering, National Institute of Technology Srinagar.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
-P(doc, "The matter embodied in this report has not been submitted by us for the "
-  "award of any other degree or diploma of this or any other Institute or "
-  "University. Wherever the work of other researchers has been used, it has been "
-  "duly acknowledged and cited in the references.",
-  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=24)
-
+P(doc, "The matter presented in this project report has not been submitted by us "
+  "for the award of any other degree of this or any other Institute/University.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=16)
 for name, enrol in [("Suchetan Karloopia", "2022BCHE019"),
                     ("Miran Haider", "2022BCHE027"),
                     ("Akshita Sen", "2022BCHE037")]:
-    pp = doc.add_paragraph()
-    pp.paragraph_format.space_after = Pt(18)
-    run_add(pp, f"{name}", size=12, bold=True)
-    run_add(pp, f"   (Enrolment No. {enrol})", size=12)
-    pp2 = doc.add_paragraph()
-    pp2.paragraph_format.space_after = Pt(4)
-    run_add(pp2, "Signature: ____________________________", size=12)
-
-P(doc, "Place: Srinagar, J&K", size=12, space_before=12, space_after=2)
-P(doc, "Date:  ______________", size=12, space_after=2)
+    pp = doc.add_paragraph(); pp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    pp.paragraph_format.space_after = Pt(2)
+    run_add(pp, "Sd/-", size=12)
+    pp2 = doc.add_paragraph(); pp2.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    pp2.paragraph_format.space_after = Pt(12)
+    run_add(pp2, f"({name.upper()}) \u2014 {enrol}", size=12, bold=True)
+P(doc, "This is to certify that the above statement made by the candidates is "
+  "correct to the best of my knowledge.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_before=8, space_after=16)
+pp = doc.add_paragraph(); pp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+pp.paragraph_format.space_after = Pt(2)
+run_add(pp, "Sd/-", size=12)
+pp = doc.add_paragraph(); pp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+pp.paragraph_format.space_after = Pt(0)
+run_add(pp, "(Dr. Fasil Qayoom Mir)", size=12, bold=True)
+pp = doc.add_paragraph(); pp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+pp.paragraph_format.space_after = Pt(16)
+run_add(pp, "Head & Associate Professor", size=11)
+P(doc, "The project Viva-Voce Examination of Suchetan Karloopia, Miran Haider "
+  "and Akshita Sen has been held on ____________________.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_before=8, space_after=30)
+pp = doc.add_paragraph()
+tabs = pp.paragraph_format.tab_stops
+tabs.add_tab_stop(Inches(4.3), WD_TAB_ALIGNMENT.LEFT)
+run_add(pp, "Signature of Supervisor(s)\tSignature of External Examiner", size=11)
+P(doc, "Date:  ______________", size=11, space_before=12, space_after=2)
 page_break(doc)
 
-# ═════════════════════════════════════════════════════════════════════════════
-#  CERTIFICATE (Supervisor)
-# ═════════════════════════════════════════════════════════════════════════════
-P(doc, "CERTIFICATE", size=15, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=12)
-hrule(doc)
-P(doc, "This is to certify that the project report entitled \u201cDevelopment and "
-  "Characterization of Bio-Composites from Waste Aquatic Biomass for Sustainable "
-  "Insulation\u201d, being submitted by Suchetan Karloopia (2022BCHE019), "
-  "Miran Haider (2022BCHE027) and Akshita Sen (2022BCHE037) to the Department of "
-  "Chemical Engineering, National Institute of Technology Srinagar, for the award "
-  "of the degree of Bachelor of Technology in Chemical Engineering, is a record "
-  "of bona fide work carried out by them under my supervision and guidance.",
-  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
-P(doc, "The candidates have worked sincerely and diligently on the project. To "
-  "the best of my knowledge, the matter embodied in this report has not been "
-  "submitted, in part or in full, to any other University or Institute for the "
-  "award of any degree or diploma.",
-  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
-P(doc, "I wish them all success in their future endeavours.",
-  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=36)
-
-pp = doc.add_paragraph(); pp.paragraph_format.space_after = Pt(2)
-run_add(pp, "Dr. Fasil Qayoom Mir", size=12, bold=True)
-P(doc, "Head & Associate Professor", size=12, space_after=2)
-P(doc, "Department of Chemical Engineering", size=12, space_after=2)
-P(doc, "National Institute of Technology Srinagar", size=12, space_after=2)
-P(doc, "Srinagar – 190006, J&K, India", size=12, space_after=2)
-page_break(doc)
-
-print("Title + Declaration + Certificate added.")
+print("Title pages + Copyright + Declaration/Certificate added.")
 
 
 
@@ -557,9 +542,9 @@ add_tof_field(doc, 'Table')
 page_break(doc)
 
 # ═════════════════════════════════════════════════════════════════════════════
-#  LIST OF ABBREVIATIONS & SYMBOLS
+#  LIST OF ABBREVIATIONS
 # ═════════════════════════════════════════════════════════════════════════════
-P(doc, "LIST OF ABBREVIATIONS AND SYMBOLS", size=15, bold=True,
+P(doc, "LIST OF ABBREVIATIONS", size=15, bold=True,
   align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
 hrule(doc)
 abbr = [
@@ -572,29 +557,51 @@ abbr = [
     ("UCT", "Unconfined Compression Test"),
     ("SEM", "Scanning Electron Microscopy"),
     ("EPS", "Expanded Polystyrene"),
+    ("XPS", "Extruded Polystyrene"),
     ("PU", "Polyurethane"),
     ("IFR", "Intumescent Flame Retardant"),
     ("PBS", "Poly(butylene succinate)"),
     ("LOI", "Limiting Oxygen Index"),
     ("RH", "Relative Humidity"),
     ("LCA", "Life Cycle Assessment"),
-    ("K", "Thermal Conductivity (W/m\u00b7K)"),
-    ("R", "Thermal Resistivity (\u00b0C\u00b7cm/W)"),
-    ("\u03c1", "Bulk Density (g/cm\u00b3)"),
-    ("\u03c3", "Compressive (Deviator) Stress (kPa)"),
-    ("\u03b5", "Axial Strain (\u2013 or %)"),
-    ("q\u1d64", "Unconfined Compressive Strength (kPa)"),
-    ("S\u1d64", "Undrained Shear Strength = q\u1d64/2 (kPa)"),
-    ("\u03b5f", "Failure Strain (%)"),
-    ("Syx", "Standard Error of Estimate (goodness-of-fit)"),
-    ("A\u2080", "Initial Cross-Sectional Area (mm\u00b2)"),
-    ("H\u2080", "Initial Specimen Height (mm)"),
+    ("IEEE", "Institute of Electrical and Electronics Engineers"),
+    ("SD", "Standard Deviation"),
 ]
-make_table(doc, ["Abbreviation / Symbol", "Description"], abbr,
-           col_widths=[2.0, 4.3], font_size=11, zebra=True)
+make_table(doc, ["Abbreviation", "Description"], abbr,
+           col_widths=[1.8, 4.5], font_size=11, zebra=True)
 page_break(doc)
 
-print("TOC + Lists + Abbreviations added.")
+# ═════════════════════════════════════════════════════════════════════════════
+#  LIST OF SYMBOLS
+# ═════════════════════════════════════════════════════════════════════════════
+P(doc, "LIST OF SYMBOLS", size=15, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
+hrule(doc)
+symbols = [
+    ("K", "Thermal conductivity", "W/m\u00b7K"),
+    ("R", "Thermal resistivity", "\u00b0C\u00b7cm/W"),
+    ("\u03c1", "Bulk density", "g/cm\u00b3"),
+    ("\u03c3", "Compressive (deviator) stress", "kPa"),
+    ("\u03b5", "Axial strain", "\u2013  or  %"),
+    ("\u03b5f", "Failure strain", "%"),
+    ("q\u1d64", "Unconfined compressive strength", "kPa"),
+    ("S\u1d64", "Undrained shear strength (= q\u1d64/2)", "kPa"),
+    ("A\u2080", "Initial cross-sectional area", "mm\u00b2"),
+    ("A", "Corrected cross-sectional area", "mm\u00b2"),
+    ("H\u2080", "Initial specimen height", "mm"),
+    ("\u0394L", "Axial deformation", "mm"),
+    ("F", "Applied compressive force", "N"),
+    ("C", "Proving-ring calibration constant", "N/div"),
+    ("W\u1d62", "Initial (wet) mass", "g"),
+    ("W\u0066", "Final (oven-dry) mass", "g"),
+    ("Syx", "Standard error of estimate (goodness-of-fit)", "\u2013"),
+    ("n", "Number of replicates", "\u2013"),
+]
+make_table(doc, ["Symbol", "Description", "Unit"], symbols,
+           col_widths=[1.2, 3.8, 1.3], font_size=11, zebra=True)
+page_break(doc)
+
+print("TOC + Lists + Abbreviations + Symbols added.")
 
 
 
@@ -636,6 +643,32 @@ P(doc, "Natural-fibre bio-composites offer a compelling alternative because they
   "investigated for insulation applications [4], [6]. Among aquatic feedstocks, "
   "water hyacinth (Eichhornia crassipes) has attracted particular attention "
   "because of its abundance, rapid growth and high cellulose content.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The thermal performance of an insulation material is quantified primarily "
+  "by its thermal conductivity, K, expressed in watts per metre-kelvin "
+  "(W/m\u00b7K). A lower value of K signifies a better insulator, since less heat "
+  "is conducted through the material for a given temperature difference. Most "
+  "lightweight insulators owe their low conductivity to a large volume fraction "
+  "of immobilised air trapped within a cellular or fibrous solid matrix; air "
+  "itself has a very low thermal conductivity of approximately 0.026 W/m\u00b7K. "
+  "Consequently, any factor that displaces this trapped air \u2014 such as "
+  "densification, void filling or, most importantly, moisture ingress \u2014 "
+  "raises the effective conductivity and degrades the insulating performance. "
+  "Water, with a thermal conductivity of about 0.6 W/m\u00b7K, conducts heat "
+  "roughly 23 times more effectively than air, which is why moisture management "
+  "is a recurring theme in the development of bio-based insulation.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "Bio-composites are materials in which a natural fibre or particulate "
+  "reinforcement is combined with a matrix (binder) to produce a material whose "
+  "properties exceed those of either constituent alone. In the present context "
+  "the reinforcement is lignocellulosic aquatic biomass and the matrix is a "
+  "biodegradable polysaccharide binder. The principal advantages of such "
+  "bio-composites are their renewability, biodegradability, low density, low "
+  "embodied energy and carbon, and the valorisation of a waste stream. Their "
+  "principal challenges \u2014 high moisture uptake, modest mechanical strength "
+  "and flammability \u2014 are precisely the deficiencies that engineering of the "
+  "particle size, binder type and binder content seeks to overcome, and which "
+  "this project investigates systematically.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "1.2  The Dal Lake Problem: An Invasive Weed as a Resource", level=2)
@@ -727,10 +760,11 @@ heading(doc, "1.7  Organisation of the Report", level=2)
 P(doc, "Chapter 1 introduces the background, motivation, problem statement and "
   "objectives. Chapter 2 presents an extended literature review of natural-fibre "
   "and water-hyacinth-based insulation materials and identifies the research gap. "
-  "Chapter 3 describes the raw materials, binder preparation, sample fabrication "
-  "and the characterization methods and equipment. Chapter 4 presents and "
-  "discusses the experimental results, with comparison against published work. "
-  "Chapter 5 summarises the conclusions and outlines directions for future work.",
+  "Chapter 3 describes the design, experimental setup and methodology \u2014 the "
+  "raw materials, binder preparation, sample fabrication and the characterization "
+  "methods and equipment. Chapter 4 presents and discusses the experimental "
+  "results, with comparison against published work. Chapter 5 summarises the "
+  "major findings, the main conclusions and the scope for future work.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
@@ -947,7 +981,42 @@ make_table(doc, lit_headers, lit_rows,
 P(doc, "* Conditions row for the same study, retained from the project literature "
   "survey for completeness.", size=9.5, italic=True, color=GREY, space_before=4)
 
-heading(doc, "2.6  Research Gap", level=2)
+heading(doc, "2.6  Pertinent Theory", level=2)
+P(doc, "Heat transfer through a porous insulation panel occurs by three "
+  "simultaneous mechanisms: conduction through the solid fibre/binder network and "
+  "through the gas in the pores, convection within larger pores, and radiation "
+  "across pore surfaces. In low-density fibrous and particulate insulants, "
+  "convection is largely suppressed because the pores are small, and the overall "
+  "(effective) thermal conductivity is dominated by solid-phase conduction and by "
+  "conduction through the entrapped air. Since still air has a very low "
+  "conductivity (\u2248 0.026 W/m\u00b7K), maximising the volume fraction of "
+  "small, isolated air pockets while minimising continuous solid pathways is the "
+  "central design principle of a good insulator. This is why a light, porous "
+  "panel insulates better than a dense one, and why moisture \u2014 which replaces "
+  "insulating air with far more conductive water \u2014 is so detrimental.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The binding action of corn starch is governed by gelatinisation. Native "
+  "starch consists of semi-crystalline granules of amylose and amylopectin. When "
+  "heated in excess water above its gelatinisation temperature (typically "
+  "60\u201375 \u00b0C for maize starch), the granules absorb water, swell and "
+  "rupture, releasing amylose and forming a viscous paste. On cooling and drying, "
+  "the dispersed starch chains re-associate (retrogradation) and form a continuous "
+  "film that bridges and bonds the biomass particles, acting as a natural "
+  "adhesive matrix. The amount of starch therefore controls the degree of "
+  "inter-particle bonding: too little leaves the panel weakly cohesive, while too "
+  "much produces a continuous, moisture-sensitive matrix that fills the very pores "
+  "responsible for insulation \u2014 the trade-off that this study quantifies.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The transient line heat-source method used for thermal-conductivity "
+  "measurement is based on the theory of radial heat conduction from an "
+  "infinitely long line source in an infinite medium. A known heat flux is "
+  "applied along a needle probe and the resulting temperature rise is recorded "
+  "with time; the slope of the temperature-versus-logarithm-of-time response is "
+  "inversely proportional to the thermal conductivity of the surrounding material. "
+  "This forms the basis of the ASTM D5334 procedure employed in this work.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+heading(doc, "2.7  Research Gap", level=2)
 P(doc, "The reviewed literature establishes that water-hyacinth fibre can yield "
   "insulation-grade thermal conductivities, but most reported systems rely either "
   "on synthetic matrices (epoxy, polyester, polyurethane), on energy-intensive "
@@ -977,7 +1046,7 @@ print("Chapter 2 added.")
 #  CHAPTER 3 — MATERIALS AND METHODS
 # ─────────────────────────────────────────────────────────────────────────────
 heading(doc, "CHAPTER 3", level=1, space_before=0)
-heading(doc, "MATERIALS AND METHODS", level=1, space_before=2)
+heading(doc, "DESIGN, SETUP AND METHODOLOGY", level=1, space_before=2)
 
 heading(doc, "3.1  Raw Materials", level=2)
 P(doc, "The primary raw material was waste aquatic biomass comprising water "
@@ -990,6 +1059,29 @@ P(doc, "The primary raw material was waste aquatic biomass comprising water "
   "synthetic polymers, resins or chemical crosslinkers were employed at any stage, "
   "ensuring that the final composite is fully bio-based and biodegradable.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "Water hyacinth and water lily are free-floating aquatic macrophytes whose "
+  "petioles and stems possess a porous, fibrous, cellulose-rich internal "
+  "structure. This natural porosity is advantageous for thermal insulation, while "
+  "the cellulosic fibres provide the structural reinforcement of the composite. "
+  "The materials used in the study and their function are summarised in Table 2.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+tbl_cap(doc, "Materials used in the study and their function.")
+make_table(doc,
+    ["Material", "Category", "Function / Rationale"],
+    [["Water hyacinth (Eichhornia crassipes)", "Primary biomass",
+      "Fibrous, cellulose-rich reinforcement and porous insulating phase"],
+     ["Water lily (Nymphaea spp.)", "Primary biomass",
+      "Supplementary aquatic biomass reinforcement"],
+     ["Food-grade corn (maize) starch", "Natural binder",
+      "Biodegradable matrix binding fibres after gelatinisation"],
+     ["Water", "Processing medium",
+      "Disperses biomass and gelatinises starch; partly removed on drying"]],
+    col_widths=[2.3, 1.3, 2.7], font_size=9.5)
+img_row(doc, [(f'{PHOTOS}/__missing_collection.jpg', '(a) Manual collection from Dal Lake'),
+              (f'{PHOTOS}/__missing_rawbiomass.jpg', '(b) Washed raw biomass')],
+        total_width_in=5.6,
+        cap_text="Collection and washing of waste aquatic biomass (water hyacinth "
+                 "and water lily) from Dal Lake, Srinagar.")
 
 heading(doc, "3.2  Biomass Pre-treatment and Size Reduction", level=2)
 P(doc, "The washed biomass was first sun-dried for 5\u20137 days under natural "
@@ -1004,6 +1096,18 @@ P(doc, "The washed biomass was first sun-dried for 5\u20137 days under natural "
   "sieves into a coarse fraction (> 3 mm; finer than No. 7 mesh) and a fine "
   "fraction (1.0\u20131.5 mm; No. 12\u2013No. 18 mesh).",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "Particle size is a critical processing variable: the coarse fraction "
+  "produces an open, weakly interlocked structure, whereas the fine fraction "
+  "offers a larger specific surface area for inter-particle contact and binding, "
+  "yielding more cohesive panels. The two classified fractions are shown in "
+  "the mixer-grinder is shown in Figure 3, the two classified fractions in "
+  "Figure 4 and the sieve set in Figure 5.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+img(doc, f'{PHOTOS}/__missing_grinder.jpg', 3.2,
+    "Mixer-grinder used for size reduction of the oven-dried biomass "
+    "(Dept. of Chemistry, NIT Srinagar).",
+    placeholder_label="Figure: Mixer-grinder photograph")
 
 img_row(doc, [(f'{PHOTOS}/fine_biomass.jpg', '(a) Fine fraction (1.0\u20131.5 mm)'),
               (f'{PHOTOS}/coarse_biomass.jpg', '(b) Coarse fraction (> 3 mm)')],
@@ -1037,7 +1141,7 @@ P(doc, "The classified biomass was mixed with the appropriate binder/water in th
   "The filled moulds were cold-pressed by hand to consolidate the mixture, reduce "
   "porosity and improve inter-particle bonding. After demoulding, the specimens "
   "were oven-dried at 103 \u00b1 2 \u00b0C to constant mass (approximately 24 "
-  "hours). Four distinct formulations were produced, as summarised in Table 2.",
+  "hours). Four distinct formulations were produced, as summarised in Table 3.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Bio-composite sample fabrication details.")
@@ -1071,16 +1175,41 @@ img_row(doc, [(f'{PHOTOS}/cyl1_nobinder.jpg', '(a) S2 fine, no binder'),
         cap_text="Cylindrical specimens (D = 30 mm, H = 25 mm) for unconfined "
                  "compression testing.")
 
+img_row(doc, [(f'{PHOTOS}/__missing_mould.jpg', '(a) Cold-pressing / mould filling'),
+              (f'{PHOTOS}/__missing_oven.jpg', '(b) Oven drying to constant mass')],
+        total_width_in=5.6,
+        cap_text="Panel consolidation and curing: (a) cold-pressing of the "
+                 "filled moulds and (b) oven drying at 103 \u00b1 2 \u00b0C.")
+
 heading(doc, "3.5  Process Flow", level=2)
 P(doc, "The complete fabrication sequence \u2014 from raw-material collection "
   "through drying, grinding, sieving, binder preparation, mixing, pressing, "
   "demoulding and curing \u2014 is summarised in the process flowsheet of "
-  "Figure 7.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+  "Figure 10.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 img(doc, f'{CHARTS}/Fig06_Process_Flowsheet.png', 5.6,
     "Process flowsheet for the fabrication of bio-composite insulation panels "
     "from waste aquatic biomass.")
 
 heading(doc, "3.6  Characterization Methods", level=2)
+P(doc, "The fabricated panels were characterized for their physical, mechanical "
+  "and thermal properties following recognised ASTM standards, with three "
+  "replicates (n = 3) tested for every property to ensure statistical reliability. "
+  "The principal equipment used in the fabrication and characterization programme "
+  "is summarised in Table 4.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+tbl_cap(doc, "Principal equipment used for fabrication and characterization.")
+make_table(doc,
+    ["Equipment", "Purpose", "Standard / Remark"],
+    [["Laboratory drying oven", "Drying biomass & curing panels", "ASTM D4442"],
+     ["Mixer-grinder (Dept. of Chemistry)", "Size reduction of dried biomass", "\u2014"],
+     ["ASTM E11 wire-mesh sieves / shaker", "Particle-size classification", "ASTM E11"],
+     ["Hot plate with magnetic stirrer", "Corn-starch gelatinisation (80\u201390 \u00b0C)", "\u2014"],
+     ["Steel & aluminium moulds", "Forming panels & UCT cylinders", "50\u00d750 mm; D30\u00d7H25 mm"],
+     ["Analytical balance", "Mass measurement", "\u2014"],
+     ["Vernier calliper", "Dimension measurement", "LC 0.1 mm"],
+     ["Baker Type K12 UCT apparatus", "Compressive strength", "C = 2.256 N/div"],
+     ["ASAHI displacement gauge", "Axial deformation", "LC 0.01 mm"],
+     ["KD2 Pro analyzer (TR-3 probe)", "Thermal conductivity", "ASTM D5334 / IEEE 442"]],
+    col_widths=[2.3, 2.2, 1.8], font_size=9.5)
 
 heading(doc, "3.6.1  Moisture Content (ASTM D4442)", level=3)
 P(doc, "Moisture content (MC) was determined gravimetrically. Specimens were "
@@ -1160,8 +1289,21 @@ heading(doc, "3.6.6  Scanning Electron Microscopy (SEM)", level=3)
 P(doc, "Scanning electron microscopy was identified for examining the "
   "microstructural morphology of the panels \u2014 fibre distribution, "
   "binder\u2013fibre interface quality and porosity. The corresponding figure "
-  "space is reserved (Figure 17); the micrographs and their interpretation are "
+  "space is reserved (Figure 20); the micrographs and their interpretation are "
   "to be added when the analysis is completed.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+heading(doc, "3.7  Statistical Analysis", level=2)
+P(doc, "All physical, mechanical and thermal measurements were performed in "
+  "triplicate (n = 3) on independently prepared specimens of each formulation. "
+  "Results are reported as the arithmetic mean of the three replicates, and the "
+  "associated variability is represented by the sample standard deviation (\u00b1 "
+  "1 SD), shown as error bars on the bar charts in Chapter 4. The use of three "
+  "replicates allows the central tendency and the spread of each property to be "
+  "estimated and reduces the influence of any single anomalous specimen. For the "
+  "thermal-conductivity measurements, the instrument-reported goodness-of-fit "
+  "parameter (Syx) was additionally used as an acceptance criterion, with values "
+  "below 2.0 regarded as indicating a reliable measurement.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
@@ -1177,8 +1319,8 @@ heading(doc, "RESULTS AND DISCUSSION", level=1, space_before=2)
 
 # ---- 4.1 Moisture Content ----
 heading(doc, "4.1  Moisture Content", level=2)
-P(doc, "The moisture content results (ASTM D4442, n = 3) are presented in Table 3 "
-  "and illustrated in Figure 11. Moisture content increased markedly with both "
+P(doc, "The moisture content results (ASTM D4442, n = 3) are presented in Table 5 "
+  "and illustrated in Figure 14. Moisture content increased markedly with both "
   "decreasing particle size and increasing starch fraction. The coarse "
   "binder-less panel S1 recorded the lowest mean MC (9.94 %) owing to its open, "
   "highly porous structure, while the high-starch panel S4 recorded the highest "
@@ -1186,6 +1328,17 @@ P(doc, "The moisture content results (ASTM D4442, n = 3) are presented in Table 
   "binder-less panel S2 (18.67 %) and the 90:10 panel S3 (23.93 %) lay in between, "
   "consistent with their larger specific surface area and moderate starch content "
   "respectively.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "From an application standpoint, the moisture content at the manufacturing "
+  "stage has direct consequences for both dimensional stability and thermal "
+  "performance. A high residual moisture content, as seen in S4, indicates that "
+  "the starch-rich matrix continues to hold water even after oven drying, which "
+  "not only plasticises the binder and lowers strength (Section 4.4) but also "
+  "degrades the insulating capacity, since water-filled pores conduct heat far "
+  "more readily than air-filled ones (Section 4.5). The progressive rise in "
+  "moisture content from S1 to S4 therefore foreshadows the property trends "
+  "observed in the mechanical and thermal tests, and underlines the importance of "
+  "limiting the hygroscopic binder fraction and of applying a hydrophobic "
+  "treatment in future work.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Moisture content measurements (n = 3 per sample) \u2014 ASTM D4442.")
 make_table(doc,
@@ -1200,8 +1353,8 @@ img(doc, f'{CHARTS}/Fig14_Moisture_Content.png', 5.4,
 
 # ---- 4.2 Bulk Density ----
 heading(doc, "4.2  Bulk Density", level=2)
-P(doc, "The bulk-density results (ASTM D1037, n = 3) are given in Table 4 and "
-  "Figure 12. The coarse panel S1 was the densest (1.087 g/cm\u00b3) due to "
+P(doc, "The bulk-density results (ASTM D1037, n = 3) are given in Table 6 and "
+  "Figure 15. The coarse panel S1 was the densest (1.087 g/cm\u00b3) due to "
   "compact packing of large particles, whereas the high-starch panel S4 was the "
   "least dense (0.868 g/cm\u00b3), being a thinner panel with a porous "
   "starch-rich matrix. The 90:10 panel S3 (0.992 g/cm\u00b3) was denser than the "
@@ -1221,8 +1374,8 @@ img(doc, f'{CHARTS}/Fig15_Bulk_Density.png', 5.4,
 
 # ---- 4.3 Water Absorption ----
 heading(doc, "4.3  Water Absorption", level=2)
-P(doc, "Water-absorption results (ASTM D570, 2-hour soak, n = 3) appear in Table 5 "
-  "and Figure 13. All samples exhibited high water uptake, characteristic of "
+P(doc, "Water-absorption results (ASTM D570, 2-hour soak, n = 3) appear in Table 7 "
+  "and Figure 16. All samples exhibited high water uptake, characteristic of "
   "untreated lignocellulosic materials, but a clear decreasing trend with "
   "increasing binder fraction was observed. The binder-less coarse panel S1 "
   "absorbed the most water (657.89 %) owing to its open porous structure, "
@@ -1248,8 +1401,8 @@ img(doc, f'{CHARTS}/Fig16_Water_Absorption.png', 5.4,
 # ---- 4.4 UCT ----
 heading(doc, "4.4  Unconfined Compressive Strength", level=2)
 P(doc, "Representative stress\u2013strain data (A\u2080 = 706.86 mm\u00b2) are "
-  "listed in Table 6, the triplicate strength summary in Table 7, and the "
-  "stress\u2013strain curves and strength comparison in Figures 14 and 15. All "
+  "listed in Table 8, the triplicate strength summary in Table 9, and the "
+  "stress\u2013strain curves and strength comparison in Figures 17 and 18. All "
   "tested samples failed at a consistent axial strain of 16 % (Reading 8), "
   "indicating that the base biomass skeleton governs the failure strain "
   "irrespective of binder content. The 90:10 panel S3 achieved the highest "
@@ -1262,6 +1415,20 @@ P(doc, "Representative stress\u2013strain data (A\u2080 = 706.86 mm\u00b2) are "
   "efficiently between fibres. This mirrors the optimum-loading behaviour reported "
   "for water-hyacinth composites, where intermediate fibre/binder ratios maximise "
   "strength [4], [10].", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The corresponding undrained shear strengths (S\u1d64 = q\u1d64/2) of 47.2, "
+  "93.0 and 13.4 kPa for S2, S3 and S4 follow the same ranking and confirm that "
+  "S3 offers roughly double the load-bearing capacity of the binder-less panel. "
+  "The uniform failure strain of 16 % across all three samples is noteworthy: it "
+  "indicates that the deformation behaviour up to failure is governed primarily by "
+  "the cellulosic biomass skeleton rather than by the binder, while the binder "
+  "controls the magnitude of the stress that the skeleton can sustain. In "
+  "practical terms, the 90:10 panel provides the best compromise between "
+  "stiffness and integrity for handling, transport and installation, whereas the "
+  "binder-less panel, although insulation-grade, would be more prone to edge "
+  "damage. These compressive-strength values, while modest compared with "
+  "structural materials, are appropriate for a non-load-bearing insulation panel "
+  "and exceed the cohesion needed for self-supporting wall infill.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Representative stress\u2013strain data (Reading 8 = failure at "
         "\u03b5f = 16 % for all samples).")
@@ -1280,7 +1447,7 @@ make_table(doc,
     highlight={(8,0):'FCE4D6',(8,1):'FCE4D6',(8,2):'FCE4D6',
                (8,3):'FCE4D6',(8,4):'FCE4D6',(8,5):'FCE4D6'})
 P(doc, "* Reading 8 = failure point for all samples (\u03b5f = 16 %). Values are "
-  "from a representative replicate; q\u1d64 in Table 7 is the triplicate mean.",
+  "from a representative replicate; q\u1d64 in Table 9 is the triplicate mean.",
   size=9.5, italic=True, color=GREY, space_before=4)
 
 tbl_cap(doc, "UCT results \u2014 unconfined compressive strength (n = 3 per sample).")
@@ -1302,7 +1469,7 @@ img(doc, f'{CHARTS}/Fig17_UCT_Strength.png', 5.4,
 # ---- 4.5 Thermal Conductivity ----
 heading(doc, "4.5  Thermal Conductivity", level=2)
 P(doc, "Thermal-conductivity results (KD2 Pro TR-3, ASTM D5334, n = 3) are given "
-  "in Table 8 and Figure 16. The fine binder-less panel S2 (K = 0.0577 W/m\u00b7K) "
+  "in Table 10 and Figure 19. The fine binder-less panel S2 (K = 0.0577 W/m\u00b7K) "
   "and the 90:10 panel S3 (K = 0.0608 W/m\u00b7K) both fall below the 0.065 "
   "W/m\u00b7K insulation-grade threshold of ASTM C168 and therefore qualify as "
   "insulation-grade materials. The high-starch panel S4 exhibited a three-fold "
@@ -1316,6 +1483,18 @@ P(doc, "Thermal-conductivity results (KD2 Pro TR-3, ASTM D5334, n = 3) are given
   "measurement quality. The S2 and S3 values are competitive with the 0.047\u2013"
   "0.065 W/m\u00b7K range reported by Salas-Ruiz et al. [2] and approach "
   "conventional glass wool (\u2248 0.034 W/m\u00b7K [7]).",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The thermal results are best understood in terms of the competition "
+  "between trapped air and the solid/liquid phases within the panel. In the fine "
+  "binder-less and 90:10 panels (S2, S3) a large fraction of inter-particle voids "
+  "remains air-filled, and because still air is an excellent insulator the "
+  "effective conductivity stays low. As the starch fraction rises to 30 % (S4), "
+  "the gelatinised binder fills these voids with a continuous solid phase and the "
+  "panel simultaneously retains a high moisture content (41.18 %); both effects "
+  "displace insulating air with phases of much higher conductivity, which explains "
+  "the abrupt three-fold increase in K. This interpretation is fully consistent "
+  "with the bulk-density and moisture-content trends and is expected to be "
+  "confirmed microstructurally once the SEM analysis (Section 4.8) is completed.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Thermal-conductivity measurements (n = 3 per sample) \u2014 "
         "KD2 Pro TR-3 / ASTM D5334.")
@@ -1333,7 +1512,7 @@ img(doc, f'{CHARTS}/Fig18_Thermal_Conductivity.png', 5.4,
 
 # ---- 4.6 Consolidated ----
 heading(doc, "4.6  Consolidated Summary and Optimal Formulation", level=2)
-P(doc, "Table 9 consolidates the mean values for all characterization tests. "
+P(doc, "Table 11 consolidates the mean values for all characterization tests. "
   "Considering the combined requirements of insulation-grade thermal conductivity "
   "and adequate mechanical strength, the 90:10 biomass:starch panel (S3) emerges "
   "as the best-balanced formulation: it delivers the highest compressive strength "
@@ -1363,8 +1542,47 @@ print("Chapter 4 added.")
 
 
 
-# ---- 4.7 SEM (pending) ----
-heading(doc, "4.7  SEM Morphological Analysis", level=2)
+# ---- 4.7 Comparison with conventional & reported materials ----
+heading(doc, "4.7  Comparison with Conventional and Reported Materials", level=2)
+P(doc, "To assess the practical significance of the results, the best-performing "
+  "formulation (S3) and the binder-less fine panel (S2) are compared in Table 12 "
+  "with conventional insulation materials and with water-hyacinth-based "
+  "composites reported in the literature. The thermal conductivities of S2 "
+  "(0.0577 W/m\u00b7K) and S3 (0.0608 W/m\u00b7K) are higher than those of "
+  "optimised commercial insulants such as glass wool (\u2248 0.034 W/m\u00b7K [7]) "
+  "and EPS (\u2248 0.035\u20130.040 W/m\u00b7K), but fall within the same "
+  "insulation-grade band and are comparable to, or better than, several reported "
+  "water-hyacinth composites \u2014 for example the WH\u2013cement composite of "
+  "Philip and Rakendu (0.0765 W/m\u00b7K [3]) and the WH\u2013bagasse\u2013epoxy "
+  "composite of Anjani et al. (0.1987 W/m\u00b7K [6]). Importantly, the present "
+  "panels achieve this performance using only a biodegradable corn-starch binder, "
+  "without any synthetic resin or cement, giving them a clear advantage in terms "
+  "of biodegradability and embodied carbon.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+tbl_cap(doc, "Comparison of the present bio-composites with conventional and "
+        "reported insulation materials.")
+make_table(doc,
+    ["Material", "K (W/m\u00b7K)", "Binder / Matrix", "Reference"],
+    [["Glass wool", "\u2248 0.034", "Inorganic (synthetic)", "Jeon et al. [7]"],
+     ["EPS foam", "0.035\u20130.040", "Polystyrene (synthetic)", "Typical [7]"],
+     ["PU foam", "0.022\u20130.028", "Polyurethane (synthetic)", "Typical"],
+     ["WH binder-less board", "0.047\u20130.065", "None", "Salas-Ruiz et al. [2]"],
+     ["WH\u2013cement composite", "0.0765", "Cement", "Philip & Rakendu [3]"],
+     ["WH\u2013bagasse\u2013epoxy", "0.1987", "Epoxy (synthetic)", "Anjani et al. [6]"],
+     ["S2 (this work)", "0.0577", "None (water only)", "Present study"],
+     ["S3 (this work)", "0.0608", "Corn starch (90:10)", "Present study"],
+     ["S4 (this work)", "0.1846", "Corn starch (70:30)", "Present study"]],
+    col_widths=[1.9, 1.2, 1.9, 1.6], font_size=9.5,
+    highlight={(6,0):'E2EFDA',(6,1):'E2EFDA',(7,0):'E2EFDA',(7,1):'E2EFDA'})
+P(doc, "The comparison confirms that the 90:10 corn-starch panel (S3) is a "
+  "credible, fully bio-based insulation candidate: it matches the insulation-grade "
+  "band of binder-less water-hyacinth boards while offering far superior "
+  "mechanical integrity, and it outperforms cement- and epoxy-bound water-hyacinth "
+  "composites on thermal conductivity.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+# ---- 4.8 SEM (pending) ----
+heading(doc, "4.8  SEM Morphological Analysis", level=2)
 P(doc, "Scanning electron microscopy was undertaken to relate the macroscopic "
   "behaviour of the panels to their microstructure \u2014 in particular the fibre "
   "distribution, the quality of the binder\u2013fibre interface, and the porosity "
@@ -1380,10 +1598,10 @@ img(doc, f'{PHOTOS}/__missing_sem.jpg', 5.0,
 page_break(doc)
 
 # ─────────────────────────────────────────────────────────────────────────────
-#  CHAPTER 5 — CONCLUSIONS AND FUTURE WORK
+#  CHAPTER 5 — CONCLUSIONS AND SCOPE FOR FUTURE WORK
 # ─────────────────────────────────────────────────────────────────────────────
 heading(doc, "CHAPTER 5", level=1, space_before=0)
-heading(doc, "CONCLUSIONS AND FUTURE WORK", level=1, space_before=2)
+heading(doc, "CONCLUSIONS AND SCOPE FOR FUTURE WORK", level=1, space_before=2)
 
 heading(doc, "5.1  Conclusions", level=2)
 P(doc, "This project demonstrated the technical feasibility of converting invasive "
@@ -1418,7 +1636,7 @@ for c in [
     pp.paragraph_format.space_after = Pt(3)
     r = pp.add_run(c); r.font.name = FONT; r.font.size = Pt(12)
 
-heading(doc, "5.2  Future Work", level=2)
+heading(doc, "5.2  Scope for Future Work", level=2)
 P(doc, "The following directions are recommended to advance this work towards a "
   "deployable product:", align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=2)
 for f in [
@@ -1444,9 +1662,59 @@ for f in [
     pp.paragraph_format.line_spacing = 1.5
     pp.paragraph_format.space_after = Pt(3)
     r = pp.add_run(f); r.font.name = FONT; r.font.size = Pt(12)
+
+heading(doc, "5.3  Scale-Up Strategy", level=2)
+P(doc, "Although the present study was conducted at laboratory scale, the "
+  "fabrication route is inherently amenable to industrial scale-up using "
+  "established process equipment. A proposed continuous manufacturing line for "
+  "the bio-composite panels would comprise the following stages:",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=2)
+for s in [
+    "Mechanical harvesting: amphibious weed harvesters for large-scale, "
+    "continuous collection of aquatic biomass from the lake surface.",
+    "Industrial drying: rotary drum dryers to reduce the biomass moisture content "
+    "to below 10 % efficiently and at scale.",
+    "Refining: hammer mills or disc refiners to process bulk biomass into a "
+    "uniform fibrous feedstock of controlled particle size.",
+    "Resination: a continuous spray line to apply the gelatinised starch binder "
+    "(and, in future, flame-retardant additives) uniformly to the fibre.",
+    "Continuous pressing: a multi-daylight press to consolidate and form panels "
+    "of standard dimensions at controlled density.",
+    "Finishing: automated trimming, sanding and application of a hydrophobic "
+    "surface coating, followed by quality inspection and packing.",
+]:
+    pp = doc.add_paragraph(style='List Number')
+    pp.paragraph_format.line_spacing = 1.5
+    pp.paragraph_format.space_after = Pt(3)
+    r = pp.add_run(s); r.font.name = FONT; r.font.size = Pt(12)
+P(doc, "Such a line would convert a continuous waste stream into a saleable "
+  "construction product, directly linking lake-restoration efforts to a viable "
+  "manufacturing value chain.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+heading(doc, "5.4  Environmental and Economic Significance", level=2)
+P(doc, "The environmental significance of this work is twofold. First, the "
+  "valorisation of water hyacinth and water lily provides a productive end-use "
+  "for an invasive weed whose uncontrolled decomposition otherwise releases "
+  "methane \u2014 a potent greenhouse gas \u2014 and returns nutrients that "
+  "perpetuate the eutrophication of Dal Lake. Diverting this biomass into durable "
+  "panels effectively sequesters its carbon for the service life of the product. "
+  "Second, by replacing petroleum-derived insulants (EPS, PU foam) and "
+  "energy-intensive inorganic insulants (glass wool, mineral wool) with a "
+  "biodegradable, plant-based panel, the embodied energy and carbon footprint of "
+  "the insulation are substantially reduced.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "Economically, the raw material is essentially free and abundant, its "
+  "removal is already funded as part of lake-conservation programmes, and the "
+  "corn-starch binder is an inexpensive, food-grade commodity. The simple, "
+  "low-temperature processing route (drying, grinding, mixing, cold pressing) "
+  "requires neither exotic chemicals nor high-pressure, high-temperature "
+  "equipment, keeping capital and operating costs low. At end of life the panels "
+  "are biodegradable and can alternatively be subjected to pyrolysis for energy "
+  "recovery, closing the material loop in line with circular-economy principles.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
-print("SEM section + Chapter 5 added.")
+print("SEM section + Chapter 5 (with scale-up & significance) added.")
 
 
 
@@ -1566,9 +1834,9 @@ def cv(doc, name, enrol):
     pp2 = doc.add_paragraph(); pp2.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     run_add(pp2, name, size=12, bold=True)
 
-P(doc, "ANNEXURE B", size=13, bold=True, align=WD_ALIGN_PARAGRAPH.CENTER,
-  color=ACCENT, space_after=4)
-P(doc, "CURRICULUM VITAE OF STUDENTS", size=12, bold=True,
+P(doc, "BRIEF BIO DATA OF THE CANDIDATES", size=14, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=2)
+P(doc, "(Annexure B)", size=11, italic=True,
   align=WD_ALIGN_PARAGRAPH.CENTER, space_after=10)
 cv(doc, "Suchetan Karloopia", "2022BCHE019")
 page_break(doc)
@@ -1577,14 +1845,45 @@ page_break(doc)
 cv(doc, "Akshita Sen", "2022BCHE037")
 page_break(doc)
 
-print("CVs added.")
+print("Brief Bio Data (CVs) added.")
 
 # ─────────────────────────────────────────────────────────────────────────────
-#  PLAGIARISM CERTIFICATE (placeholder)
+#  RESEARCH PUBLICATIONS
 # ─────────────────────────────────────────────────────────────────────────────
-P(doc, "PLAGIARISM CERTIFICATE", size=15, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=12)
+P(doc, "RESEARCH PUBLICATIONS", size=15, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
 hrule(doc)
+P(doc, "Work arising from this project is being prepared for communication. The "
+  "publications/presentations associated with this project are listed below; the "
+  "list is to be updated by the candidates as the work is communicated.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
+for item in [
+    "S. Karloopia, M. Haider and A. Sen, \u201cDevelopment and characterization of "
+    "bio-composites from waste aquatic biomass for sustainable insulation,\u201d "
+    "(manuscript under preparation), 2026.",
+    "Poster/oral presentation, Department of Chemical Engineering, NIT Srinagar "
+    "(to be updated).",
+]:
+    pp = doc.add_paragraph(style='List Bullet')
+    pp.paragraph_format.line_spacing = 1.5
+    pp.paragraph_format.space_after = Pt(6)
+    r = pp.add_run(item); r.font.name = FONT; r.font.size = Pt(11.5)
+page_break(doc)
+
+print("Research Publications added.")
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  APPENDICES
+# ─────────────────────────────────────────────────────────────────────────────
+P(doc, "APPENDICES", size=15, bold=True,
+  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
+hrule(doc)
+P(doc, "This section contains supplementary material that supports but is not part "
+  "of the main body of the report.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=12)
+
+P(doc, "APPENDIX A \u2014 PLAGIARISM CERTIFICATE", size=13, bold=True,
+  color=ACCENT, space_before=6, space_after=10)
 P(doc, "This is to certify that the project report entitled \u201cDevelopment and "
   "Characterization of Bio-Composites from Waste Aquatic Biomass for Sustainable "
   "Insulation\u201d has been checked for plagiarism using approved similarity-"
@@ -1616,7 +1915,7 @@ P(doc, "Dr. Fasil Qayoom Mir", size=12, bold=True, space_before=8, space_after=0
 P(doc, "Head & Associate Professor, Department of Chemical Engineering, NIT Srinagar",
   size=11, space_after=0)
 
-print("Plagiarism certificate added.")
+print("Appendices (Plagiarism Certificate) added.")
 
 
 
