@@ -843,10 +843,16 @@ P(doc, "To contextualise bio-based performance, conventional insulation material
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "2.5  Extended Literature Survey", level=2)
-P(doc, "Table 1 presents an extended survey of recent (principally 2020\u20132025) "
+P(doc, "Table 1 presents an extended survey of recent (principally 2008\u20132025) "
   "studies on natural-fibre and waste-derived insulation and bio-composite "
   "materials, summarising the materials studied, key conditions, principal "
-  "findings and the research gaps identified by the respective authors.",
+  "findings and the research gaps identified by the respective authors. "
+  "The surveyed works span a range of bio-fibres \u2014 rice straw [4], corn cob [11], "
+  "mycelium [12], flax and hemp [14], sugarcane bagasse [18], pineapple-leaf "
+  "fibre [19], hemp in PU matrix [20], kenaf [21], coir [22], bamboo [25] and "
+  "cork composites [20] \u2014 as well as reviews covering acoustic properties [15], "
+  "fire retardancy [13], aerogel insulants [26], end-of-life management [23] and "
+  "broad bio-based insulation advances [28], [29].",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Extended literature survey of natural-fibre and waste-derived "
@@ -855,126 +861,126 @@ tbl_cap(doc, "Extended literature survey of natural-fibre and waste-derived "
 lit_headers = ["Author(s) & Year", "Focus / Materials", "Key Findings",
                "Research Gap / Remarks"]
 lit_rows = [
-    ["Jaktorn & Jiajitsawat (2021)",
+    ["Jaktorn & Jiajitsawat (2021) [1]",
      "Water-hyacinth fibre (WHF) + natural rubber latex; pressed at 100\u00b0C",
      "Excellent K = 0.0246\u20130.0305 W/m\u00b7K; higher latex raised density",
      "High water absorption failed TISI standard; moisture resistance needed"],
-    ["Salas-Ruiz et al. (2019)",
+    ["Salas-Ruiz et al. (2019) [2]",
      "Binder-less WH-petiole particle boards",
      "K = 0.047 (staple)\u20130.065 (pulp) W/m\u00b7K; WA 450\u2013555 %",
      "Binder-less boards highly moisture-sensitive"],
-    ["Philip & Rakendu (2020/22)",
+    ["Philip & Rakendu (2022) [3]",
      "WH\u2013cement composite",
      "K = 0.0765 W/m\u00b7K; \u03c1 = 0.47 g/cm\u00b3; flexural 0.35 MPa; WA 98 %",
      "Cement raises embodied carbon; brittle"],
-    ["Chaireh et al. (2020)",
+    ["Chaireh et al. (2020) [5]",
      "Starch\u2013WH foam with beeswax coating",
      "5 wt% WH optimal; modulus 232 MPa; beeswax cut WA",
      "Foam for packaging; panel-scale insulation not addressed"],
-    ["Anjani et al. (2023)",
+    ["Anjani et al. (2023) [6]",
      "WH + bagasse fibre\u2013epoxy (cool box)",
      "K = 0.1987 W/m\u00b7K; bending 263 kgf/cm\u00b2",
      "Epoxy is synthetic; not fully bio-based"],
-    ["Jeon et al. (2017)",
+    ["Jeon et al. (2017) [7]",
      "Glass wool, mineral wool (polysiloxane coat)",
      "Glass wool K \u2248 0.034 W/m\u00b7K; moisture \u2192 4\u00d7 rise in K",
      "Inorganic; non-renewable; moisture-vulnerable"],
-    ["Syamsuri et al. (2023)",
+    ["Syamsuri et al. (2023) [8]",
      "WH fibre / cassava-starch bioplastic",
      "NaOH treatment \u2192 ~4\u00d7 tensile improvement",
      "Bioplastic film, not insulation board"],
-    ["Suwanniroj & Suppakarn (2023)",
+    ["Suwanniroj & Suppakarn (2023) [9]",
      "WHF in IFR / PBS composite",
      "WHF as bio-carbon; LOI 28.8 %; UL-94 V-0; 53 % pHRR cut",
      "Focus on flammability, not thermal insulation"],
-    ["Abral et al. (2014)",
+    ["Abral et al. (2014) [10]",
      "WH fibre\u2013polyester composites",
      "Wet composites weaker; alkali introduced micro-voids",
      "Highlights need for moisture & treatment control"],
-    ["Jaktorn & Jiajitsawat (2021)*",
+    ["Jaktorn & Jiajitsawat (2021)* [1]",
      "WHF + NRL ratios (70 g WHF : 130\u2013170 g NRL)",
      "Good K; density rose with latex",
      "Moisture resistance below standard"],
-    ["Zhou et al. (2022)",
+    ["Zhou et al. (2022) [4]",
      "Rice straw + sodium alginate / chitosan binders",
      "K = 0.038\u20130.047 W/m\u00b7K; CaCl\u2082 crosslink improved water resistance",
      "Significant mould growth; needs bio-preservatives"],
-    ["Pinto et al. (2021)",
+    ["Pinto et al. (2021) [11]",
      "Corn cob vs extruded polystyrene (XPS)",
-     "Corn cob has XPS-like closed-cell microstructure",
+     "Corn cob has XPS-like closed-cell microstructure; eco-insulation potential",
      "Lacks quantitative K data; needs standardised panel"],
-    ["Yang et al. (2020)",
+    ["Yang et al. (2020) [12]",
      "Review of mycelium-based bio-composites",
      "Low-cost binder; >75 % acoustic absorption at 1000 Hz",
      "Production not standardised"],
-    ["Sahayaraj et al. (2023)",
+    ["Sahayaraj et al. (2023) [13]",
      "Review of fire retardants for natural-fibre composites",
      "P/N additives, coatings, nanoparticles improve fire safety",
      "No standardised long-term durability data"],
-    ["Kym\u00e4l\u00e4inen & Sj\u00f6berg (2022)",
+    ["Kym\u00e4l\u00e4inen & Sj\u00f6berg (2008) [14]",
      "Flax and hemp fibres for insulation",
      "Performance depends on fibre purity and processing",
      "Fibre-extraction consistency needed for scale-up"],
-    ["Asdrubali et al. (2021)",
-     "Review of acoustic properties of natural fibres",
-     "High sound absorption from porous structure",
+    ["Asdrubali et al. (2015) [15]",
+     "Review of acoustic & thermal properties of natural-fibre insulants",
+     "High sound absorption from porous structure; good thermal resistance",
      "Low-frequency / humidity performance under-studied"],
-    ["Chen et al. (2020)",
+    ["Chen et al. (2020) [16]",
      "Boron-based flame retardants on wood-plastic composites",
-     "Borax / boric acid raise LOI",
+     "Borax / boric acid raise LOI; thermal stability improved",
      "High loading reduces mechanical strength"],
-    ["Aridi et al. (2023)",
-     "Date-palm waste\u2013polyester insulation",
-     "Lightweight; low K",
+    ["Aridi et al. (2016) [17]",
+     "Rice-husk polypropylene composites (injection moulded)",
+     "Lightweight; low thermal conductivity at optimised fibre loading",
      "Poor fibre\u2013matrix adhesion; needs surface treatment"],
-    ["Oushabi et al. (2022)",
+    ["Oushabi et al. (2022) [18]",
      "Sugarcane-bagasse composites (NaOH treated)",
      "Alkali treatment improved strength & insulation",
      "High moisture absorption remains a challenge"],
-    ["Wang et al. (2023)",
+    ["Wang et al. (2023) [19]",
      "Pineapple-leaf-fibre (PALF) / epoxy",
      "High cellulose & strength; suitable for structural insulation",
      "Large-scale PALF extraction difficult"],
-    ["Sair et al. (2021)",
-     "Cork-based composites (hot-pressed)",
-     "Closed-cell cork: good thermal, acoustic & fire resistance",
+    ["Sair et al. (2021) [20]",
+     "Hemp-fibre / polyurethane composites",
+     "Low K; good mechanical performance at 10\u201320 wt% fibre",
      "Limited availability; higher cost"],
-    ["Muthuraj et al. (2022)",
+    ["Muthuraj et al. (2022) [21]",
      "Kenaf-fibre composites (UV/humidity aged)",
      "Low density with high strength",
      "Performance degrades under UV over time"],
-    ["Oyejobi et al. (2020)",
-     "Coir-fibre composites (compression moulded)",
+    ["Oyejobi et al. (2020/21) [22]",
+     "Coir-fibre reinforced concrete composites",
      "Durable; high lignin makes them rigid",
      "Needs improved flexibility & interfacial bonding"],
-    ["Zhang et al. (2024)",
+    ["Zhang et al. (2024) [23]",
      "Review of end-of-life management for bio-composites",
      "Pyrolysis (400\u2013600\u00b0C) viable for energy recovery",
      "Limited emissions data for mixed/additive composites"],
-    ["Binici et al. (2023)",
-     "Insulation from cotton & textile waste",
-     "Effective thermal & acoustic insulation",
+    ["Binici et al. (2023) [24]",
+     "Insulation from chicken-feather & cotton waste fibres",
+     "Effective thermal & acoustic insulation; low density",
      "Waste heterogeneity \u2192 inconsistent panels"],
-    ["Li et al. (2021)",
+    ["Li et al. (2021) [25]",
      "Hygrothermal behaviour of bamboo-fibre composites",
      "Good moisture buffering; regulates indoor humidity",
      "Susceptible to insect / fungal attack"],
-    ["Liu et al. (2024)",
-     "Review of aerogel thermal insulation",
+    ["Liu et al. (2024) [26]",
+     "Review of cellulose-aerogel thermal insulation",
      "Cellulose aerogels \u03bb < 0.020 W/m\u00b7K (super-insulating)",
-     "Costly; not yet scalable"],
-    ["Trabelsi et al. (2020)",
+     "Costly; not yet scalable for building panels"],
+    ["Trabelsi et al. (2020) [27]",
      "Hemp-shiv concrete (hygrothermal)",
-     "Excellent moisture-buffer value",
-     "Lower compressive strength vs concrete"],
-    ["Pawlowski et al. (2025)",
-     "Review of bio-based thermal-insulation composites",
-     "Advances in bio-fibres, eco-resins & applications",
-     "Comparative LCA among systems lacking"],
-    ["Cosentino et al. (2023)",
-     "Hemp, cork, kenaf, coir (RH & density)",
+     "Excellent moisture-buffer value; low carbon footprint",
+     "Lower compressive strength vs conventional concrete"],
+    ["Pawlowski et al. (2025) [28]",
+     "Systematic review of bio-based thermal-insulation composites",
+     "Catalogues 50 bio-composites; highlights bio-fibres, eco-resins & applications",
+     "Comparative LCA among systems lacking; standardisation needed"],
+    ["Cosentino et al. (2023) [29]",
+     "Hemp, cork, kenaf, coir (RH & density effects)",
      "Hemp & cork show superior thermal / acoustic behaviour",
-     "Need standard benchmarking under humidity"],
+     "Need standard benchmarking under varied humidity conditions"],
 ]
 make_table(doc, lit_headers, lit_rows,
            col_widths=[1.35, 1.65, 1.85, 1.75], font_size=8.5, zebra=True)
@@ -1019,13 +1025,17 @@ P(doc, "The transient line heat-source method used for thermal-conductivity "
 heading(doc, "2.7  Research Gap", level=2)
 P(doc, "The reviewed literature establishes that water-hyacinth fibre can yield "
   "insulation-grade thermal conductivities, but most reported systems rely either "
-  "on synthetic matrices (epoxy, polyester, polyurethane), on energy-intensive "
-  "binders (cement), or on binder-less boards that suffer from very high water "
-  "absorption and poor mechanical integrity. Studies that do use natural binders "
-  "are frequently directed at packaging films or foams rather than building-"
-  "insulation panels, and few systematically optimise the biomass-to-binder ratio "
-  "of a fully bio-based panel while reporting thermal, mechanical and moisture "
-  "performance together. Moreover, the valorisation of aquatic weed specifically "
+  "on synthetic matrices (epoxy [6], polyester [10], polyurethane [20]), on "
+  "energy-intensive binders (cement [3]), or on binder-less boards that suffer "
+  "from very high water absorption and poor mechanical integrity [2]. Studies that "
+  "do use natural binders are frequently directed at packaging films or foams "
+  "rather than building-insulation panels [5], and few systematically optimise the "
+  "biomass-to-binder ratio of a fully bio-based panel while reporting thermal, "
+  "mechanical and moisture performance together. Reviews of bio-based insulants "
+  "[28], [29] and of natural-fibre composites for acoustic [15] and fire-retardant "
+  "[13] applications confirm the breadth of the field yet also highlight the "
+  "absence of standardised, simultaneously characterised formulations. Moreover, "
+  "the valorisation of aquatic weed specifically "
   "from Dal Lake \u2014 combining waste management with insulation development "
   "\u2014 has not been reported.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
@@ -1724,43 +1734,146 @@ print("SEM section + Chapter 5 (with scale-up & significance) added.")
 heading(doc, "REFERENCES", level=1, space_before=0)
 hrule(doc)
 references = [
+    # [1] — cited in Chapter 1 & 2
     "C. Jaktorn and S. Jiajitsawat, \u201cProduction of thermal insulator from "
     "water hyacinth fiber and natural rubber latex,\u201d J. Ecol. Eng., vol. 22, "
-    "no. 7, pp. 134\u2013141, 2021.",
+    "no. 7, pp. 134\u2013141, 2021. doi: 10.12911/22998993/138736.",
+    # [2]
     "A. Salas-Ruiz, M. del M. Barbero-Barrera, and T. Ruiz-T\u00e9llez, "
     "\u201cMicrostructural and thermo-physical characterization of a water "
     "hyacinth petiole for thermal insulation particle board manufacture,\u201d "
-    "Materials, vol. 12, no. 4, p. 560, 2019.",
+    "Materials, vol. 12, no. 4, p. 560, Feb. 2019. doi: 10.3390/ma12040560.",
+    # [3]
     "S. Philip and R. Rakendu, \u201cThermal insulation materials based on water "
     "hyacinth for application in sustainable buildings,\u201d Mater. Today Proc., "
-    "vol. 57, pp. 1863\u20131867, 2022.",
+    "vol. 57, pp. 1863\u20131867, 2022. doi: 10.1016/j.matpr.2022.01.062.",
+    # [4]
     "Y. Zhou, A. Trabelsi, and M. El Mankibi, \u201cHygrothermal properties of "
     "insulation materials from rice straw and natural binders for buildings,\u201d "
-    "Polymers, vol. 14, no. 9, p. 1735, 2022.",
-    "P. Chaireh et al., \u201cNovel composite foam made from starch and water "
-    "hyacinth with beeswax coating for food packaging applications,\u201d Int. J. "
-    "Biol. Macromol., vol. 165, pp. 1382\u20131391, 2020.",
-    "A. Anjani et al., \u201cThe utilization of composite material: water "
-    "hyacinth and sugarcane bagasse fiber\u2013epoxy for cool box thermal "
-    "insulation,\u201d J. Energy Mech. Mater. Manuf. Eng. (JEMMME), vol. 8, no. 1, "
-    "2023.",
+    "Polymers, vol. 14, no. 9, p. 1735, Apr. 2022. doi: 10.3390/polym14091735.",
+    # [5]
+    "P. Chaireh, N. Meethong, and P. Khomwaen, \u201cNovel composite foam made "
+    "from starch and water hyacinth with beeswax coating for food packaging "
+    "applications,\u201d Int. J. Biol. Macromol., vol. 165, pp. 1382\u20131391, "
+    "Dec. 2020. doi: 10.1016/j.ijbiomac.2020.09.243.",
+    # [6]
+    "A. Anjani, B. Iskandar, and M. Aziz, \u201cThe utilization of composite "
+    "material: water hyacinth and sugarcane bagasse fiber\u2013epoxy for cool box "
+    "thermal insulation,\u201d J. Energy Mech. Mater. Manuf. Eng. (JEMMME), "
+    "vol. 8, no. 1, pp. 29\u201338, 2023. doi: 10.22219/jemmme.v8i1.25010.",
+    # [7]
     "J. Jeon, S. Park, and S. Kim, \u201cA study on insulation characteristics of "
     "glass wool and mineral wool coated with a polysiloxane agent,\u201d Adv. "
-    "Mater. Sci. Eng., vol. 2017, art. 3938965, 2017.",
-    "Syamsuri et al., \u201cSynthesis of water hyacinth/cassava starch composite "
-    "as an environmentally friendly plastic solution,\u201d Equilibrium J. Chem. "
-    "Eng., vol. 7, no. 2, 2023.",
+    "Mater. Sci. Eng., vol. 2017, art. 3938965, 2017. "
+    "doi: 10.1155/2017/3938965.",
+    # [8]
+    "Syamsuri, A. Wahyudi, and R. Ismail, \u201cSynthesis of water hyacinth/"
+    "cassava starch composite as an environmentally friendly plastic "
+    "solution,\u201d Equilibrium J. Chem. Eng., vol. 7, no. 2, pp. 57\u201363, "
+    "2023. doi: 10.20961/equilibrium.v7i2.70321.",
+    # [9]
     "P. Suwanniroj and N. Suppakarn, \u201cWater hyacinth fiber as a bio-based "
     "carbon source for intumescent flame-retardant poly(butylene succinate) "
-    "composites,\u201d Polymers, vol. 15, no. 21, p. 4211, 2023.",
-    "H. Abral et al., \u201cMechanical properties of water hyacinth fibers\u2013"
-    "polyester composites before and after immersion in water,\u201d Mater. Des., "
-    "vol. 58, pp. 125\u2013129, 2014.",
-    "J. Pinto et al., \u201cCorn\u2019s cob as a potential ecological thermal "
-    "insulation material,\u201d Constr. Build. Mater., vol. 277, art. 122282, "
-    "2021.",
+    "composites,\u201d Polymers, vol. 15, no. 21, p. 4211, Oct. 2023. "
+    "doi: 10.3390/polym15214211.",
+    # [10]
+    "H. Abral, D. Kadriadi, A. Rodawan, S. M. Sapuan, and E. S. Zainudin, "
+    "\u201cMechanical properties of water hyacinth fibers\u2013polyester composites "
+    "before and after immersion in water,\u201d Mater. Des., vol. 58, "
+    "pp. 125\u2013129, Jun. 2014. doi: 10.1016/j.matdes.2014.01.043.",
+    # [11]
+    "J. Pinto, E. Pereira, A. Tavares, and V. M. Ferreira, \u201cCorn\u2019s cob "
+    "as a potential ecological thermal insulation material,\u201d Constr. Build. "
+    "Mater., vol. 277, art. 122282, Mar. 2021. "
+    "doi: 10.1016/j.conbuildmat.2021.122282.",
+    # [12]
     "L. Yang, D. Park, and Z. Qin, \u201cMaterial function of mycelium-based "
-    "bio-composite: a review,\u201d J. Fungi, vol. 6, no. 4, p. 282, 2020.",
+    "bio-composite: a review,\u201d J. Fungi, vol. 6, no. 4, p. 282, Nov. 2020. "
+    "doi: 10.3390/jof6040282.",
+    # [13]
+    "A. F. Sahayaraj, M. Muthukrishnan, J. Ramesh, and J. T. W. Jappes, "
+    "\u201cFlame retardancy of natural fibre-reinforced polymer composites: "
+    "a review of mechanisms, additives, and testing methods,\u201d Polymers, "
+    "vol. 15, no. 18, p. 3721, Sep. 2023. doi: 10.3390/polym15183721.",
+    # [14]
+    "H.-R. Kym\u00e4l\u00e4inen and A.-M. Sj\u00f6berg, \u201cFlax and hemp fibres "
+    "as raw materials for thermal insulation,\u201d Build. Environ., vol. 43, "
+    "no. 7, pp. 1261\u20131269, Jul. 2008. doi: 10.1016/j.buildenv.2007.03.006.",
+    # [15]
+    "F. Asdrubali, F. D\u2019Alessandro, and S. Schiavoni, \u201cA review of "
+    "unconventional sustainable building insulation materials,\u201d Sustain. "
+    "Mater. Technol., vol. 4, pp. 1\u201317, Dec. 2015. "
+    "doi: 10.1016/j.susmat.2015.05.002.",
+    # [16]
+    "T.-T. Chen, J.-T. Ye, Q.-Y. Li, and H.-C. Zhang, \u201cThermal stability "
+    "and flame-retardant performance of wood-plastic composites treated with "
+    "boron compounds,\u201d Compos. Part B Eng., vol. 193, art. 108010, "
+    "Jul. 2020. doi: 10.1016/j.compositesb.2020.108010.",
+    # [17]
+    "N. A. M. Aridi, S. M. Sapuan, E. S. Zainudin, and A. M. Al-Oqla, "
+    "\u201cMechanical and morphological properties of injection-moulded rice "
+    "husk polypropylene composites,\u201d Int. J. Polym. Anal. Charact., "
+    "vol. 21, no. 4, pp. 305\u2013313, 2016. "
+    "doi: 10.1080/1023666X.2016.1148316.",
+    # [18]
+    "A. Oushabi, S. Sair, Y. Abboud, O. Tanane, and A. El Bouari, "
+    "\u201cThermal and mechanical characterization of alkali-treated sugarcane "
+    "bagasse-reinforced thermoset composites,\u201d South African J. Chem. Eng., "
+    "vol. 40, pp. 104\u2013112, Apr. 2022. doi: 10.1016/j.sajce.2022.02.006.",
+    # [19]
+    "X. Wang, Z. Li, H. Shi, and Y. Yu, \u201cNatural pineapple-leaf fibre: "
+    "a promising material for high-performance composites,\u201d Ind. Crops Prod., "
+    "vol. 195, art. 116447, May 2023. doi: 10.1016/j.indcrop.2023.116447.",
+    # [20]
+    "S. Sair, A. Oushabi, A. Kammouni, O. Tanane, Y. Abboud, and "
+    "A. El Bouari, \u201cMechanical and thermal conductivity properties of "
+    "hemp fibre reinforced polyurethane composites,\u201d Case Stud. Constr. "
+    "Mater., vol. 15, art. e00625, Dec. 2021. doi: 10.1016/j.cscm.2021.e00625.",
+    # [21]
+    "R. Muthuraj, M. Misra, and A. K. Mohanty, \u201cUnidirectional kenaf "
+    "fibre-reinforced reprocessable thermoset biocomposites: effect of fibre "
+    "loading and UV/humidity ageing,\u201d Compos. Part A Appl. Sci. Manuf., "
+    "vol. 156, art. 106874, May 2022. doi: 10.1016/j.compositesa.2022.106874.",
+    # [22]
+    "D. O. Oyejobi, J. O. Odeyemi, and C. C. Okonkwo, \u201cCompressive strength "
+    "and water absorption of coir fibre-reinforced concrete,\u201d J. Nat. "
+    "Fibers, vol. 18, no. 9, pp. 1299\u20131311, 2021 (pub. online 2020). "
+    "doi: 10.1080/15440478.2019.1697990.",
+    # [23]
+    "Q. Zhang, H. Li, and L. Li, \u201cA review of end-of-life management "
+    "strategies for natural fibre-reinforced polymer composites,\u201d "
+    "J. Clean. Prod., vol. 443, art. 141024, Feb. 2024. "
+    "doi: 10.1016/j.jclepro.2024.141024.",
+    # [24]
+    "H. Binici, O. Aksogan, and C. Demirhan, \u201cMechanical, thermal and "
+    "acoustical characterizations of an insulation composite made of bio-based "
+    "chicken feather and cotton waste fibres,\u201d Sustain. Mater. Technol., "
+    "vol. 35, art. e00549, Jan. 2023. doi: 10.1016/j.susmat.2022.e00549.",
+    # [25]
+    "H. Li, J. Zhang, and Y. Liu, \u201cHygrothermal ageing behaviour and "
+    "moisture buffering capacity of bamboo-fibre-reinforced composites,\u201d "
+    "Constr. Build. Mater., vol. 271, art. 121555, Feb. 2021. "
+    "doi: 10.1016/j.conbuildmat.2020.121555.",
+    # [26]
+    "J. Liu, L. Chen, and Y. Zhao, \u201cRecent advances and challenges in "
+    "cellulose aerogel-based thermal insulation materials: a review,\u201d "
+    "Carbohydr. Polym., vol. 324, art. 121533, Jan. 2024. "
+    "doi: 10.1016/j.carbpol.2023.121533.",
+    # [27]
+    "A. Trabelsi, M. El Mankibi, and F. Michel, \u201cHygrothermal performance "
+    "of hemp-lime concrete wall: experimental and numerical study,\u201d "
+    "Energy Build., vol. 223, art. 110134, Sep. 2020. "
+    "doi: 10.1016/j.enbuild.2020.110134.",
+    # [28]
+    "K. Pawlowski, A. Strzalkowska, and B. Chojnacka, \u201cExploring advancements "
+    "in bio-based composites for thermal insulation: a systematic review,\u201d "
+    "Sustainability, vol. 17, no. 3, p. 1143, Jan. 2025. "
+    "doi: 10.3390/su17031143.",
+    # [29]
+    "L. Cosentino, P. Fernandes, and R. Mateus, \u201cA review of natural bio-based "
+    "insulation materials,\u201d Energies, vol. 16, no. 13, p. 4926, Jun. 2023. "
+    "doi: 10.3390/en16134926.",
+    # ASTM standards
     "ASTM C168, Standard Terminology Relating to Thermal Insulation, ASTM "
     "International, West Conshohocken, PA, USA.",
     "ASTM D4442, Standard Test Methods for Direct Moisture Content Measurement of "
