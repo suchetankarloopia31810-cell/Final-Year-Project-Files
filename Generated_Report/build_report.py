@@ -21,9 +21,9 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ALIGN_VERTICAL
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-CHARTS = '/projects/sandbox/fyp_report/charts'
-PHOTOS = '/projects/sandbox/fyp_report/photos'
-OUTPUT = '/projects/sandbox/fyp_report/output/FYP_Report_BioComposites.docx'
+CHARTS = '/projects/sandbox/Final-Year-Project-Files/Generated_Report/charts'
+PHOTOS = '/projects/sandbox/Final-Year-Project-Files/Generated_Report/photos'
+OUTPUT = '/projects/sandbox/Final-Year-Project-Files/Generated_Report/FYP_Report_BioComposites.docx'
 
 FONT = 'Times New Roman'
 ACCENT = RGBColor(0x1F, 0x3B, 0x66)
@@ -749,9 +749,9 @@ P(doc, "This study focuses on the laboratory-scale fabrication and physico-"
   "mechanical-thermal characterization of four bio-composite formulations. The "
   "characterization programme comprises moisture content (ASTM D4442), bulk "
   "density (ASTM D1037), water absorption (ASTM D570), unconfined compressive "
-  "strength (Baker Type K12 apparatus) and thermal conductivity (KD2 Pro TR-3 "
-  "probe, ASTM D5334). Scanning electron microscopy (SEM) is identified for "
-  "microstructural analysis and the corresponding figure space is reserved. "
+  "strength (Baker Type K12 apparatus), thermal conductivity (KD2 Pro TR-3 "
+  "probe, ASTM D5334) and scanning electron microscopy (SEM) for microstructural "
+  "analysis of the binder-less (S1) and 90:10 starch-bound (S3) formulations. "
   "Flammability testing, hydrophobic surface treatments and full life-cycle "
   "assessment are identified as future work and are outside the present scope.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
@@ -1296,11 +1296,20 @@ img_row(doc, [(f'{PHOTOS}/thermal_test_nobinder.jpg', '(a) S2 (no binder)'),
                  "using the TR-3 probe: (a) S2, (b) S3 and (c) S4.")
 
 heading(doc, "3.6.6  Scanning Electron Microscopy (SEM)", level=3)
-P(doc, "Scanning electron microscopy was identified for examining the "
-  "microstructural morphology of the panels \u2014 fibre distribution, "
-  "binder\u2013fibre interface quality and porosity. The corresponding figure "
-  "space is reserved (Figure 20); the micrographs and their interpretation are "
-  "to be added when the analysis is completed.",
+P(doc, "The surface morphology and microstructure of two representative "
+  "formulations \u2014 the fine binder-less panel (S1) and the 90:10 corn-starch "
+  "panel (S3) \u2014 were examined using scanning electron microscopy (SEM). Small "
+  "fragments (approximately 5 \u00d7 5 mm) were carefully cut from the oven-dried "
+  "panels, mounted on aluminium stubs using conductive carbon tape, and sputter-"
+  "coated with gold to prevent charging under the electron beam. Multiple "
+  "micrographs were acquired at varying magnifications to capture the overall "
+  "fibre arrangement (low magnification) as well as the binder\u2013fibre "
+  "interface and pore architecture (high magnification). The micrographs were "
+  "used to correlate the macroscopic physical, mechanical and thermal measurements "
+  "with the underlying microstructure \u2014 specifically the degree of inter-"
+  "fibre bonding, the pore volume fraction and the presence or absence of a "
+  "continuous binder matrix. Results and interpretation are presented in "
+  "Section 4.8.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "3.7  Statistical Analysis", level=2)
@@ -1591,20 +1600,154 @@ P(doc, "The comparison confirms that the 90:10 corn-starch panel (S3) is a "
   "composites on thermal conductivity.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
-# ---- 4.8 SEM (pending) ----
+# ---- 4.8 SEM Morphological Analysis (with actual micrographs) ----
 heading(doc, "4.8  SEM Morphological Analysis", level=2)
-P(doc, "Scanning electron microscopy was undertaken to relate the macroscopic "
-  "behaviour of the panels to their microstructure \u2014 in particular the fibre "
-  "distribution, the quality of the binder\u2013fibre interface, and the porosity "
-  "that governs both thermal conductivity and water absorption. The micrographs "
-  "are expected to confirm a more open, porous structure for the insulation-grade "
-  "panels (S2, S3) and a denser, void-filled matrix for S4, consistent with its "
-  "higher thermal conductivity. The analysis is pending and the figure space is "
-  "reserved below.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-img(doc, f'{PHOTOS}/__missing_sem.jpg', 5.0,
-    "SEM micrographs of the bio-composite panels (fibre distribution, "
-    "binder\u2013fibre interface and porosity) \u2014 to be added.",
-    placeholder_label="Figure: SEM micrographs (pending)")
+P(doc, "Scanning electron microscopy was carried out on the fine binder-less panel "
+  "(S1) and the 90:10 starch-bound panel (S3) to establish a direct link between "
+  "their microstructure and the macroscopic thermal, mechanical and moisture "
+  "behaviour measured in Sections 4.1\u20134.5. Micrographs were acquired at "
+  "multiple magnifications for each sample; the full sets are presented and "
+  "discussed below.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+heading(doc, "4.8.1  Sample S1 \u2014 Fine Binder-less Panel", level=3)
+P(doc, "The SEM micrographs of S1 (Figures 20\u201324) reveal a highly open, "
+  "porous fibre network characteristic of a binder-less lignocellulosic "
+  "composite. At low magnification the micrographs show randomly oriented "
+  "biomass fibres and fragments with large inter-particle voids; no continuous "
+  "matrix phase is discernible, confirming the absence of binder. The fibres "
+  "retain their naturally tubular, sponge-like cellular cross-section \u2014 a "
+  "hallmark of water-hyacinth petiole tissue \u2014 which contributes additional "
+  "trapped-air volume within the fibre lumen as well as between the fibres. At "
+  "higher magnification the fibre surfaces appear rough and uncoated, with "
+  "exposed cell-wall microfibrils; inter-fibre contact is purely mechanical "
+  "(friction and interlocking), which is consistent with the relatively modest "
+  "compressive strength of 94.4 kPa recorded for S1. The large inter-fibre void "
+  "space accounts directly for the excellent insulating performance "
+  "(K = 0.0577 W/m\u00b7K), since still air trapped in these pores suppresses "
+  "heat conduction. The same open structure, however, explains the high water "
+  "absorption (522.86 %) because water can freely penetrate the interconnected "
+  "pore network.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+img_row(doc,
+    [(f'{PHOTOS}/sem_s1_00.jpg', '(a) S1 \u2014 overview (low magnification)'),
+     (f'{PHOTOS}/sem_s1_01.jpg', '(b) S1 \u2014 fibre network detail')],
+    total_width_in=6.2,
+    cap_text="SEM micrographs of S1 (fine binder-less panel): (a) low-magnification "
+             "overview showing open porous fibre network; (b) detail highlighting "
+             "large inter-particle voids and randomly oriented fibres.")
+
+img_row(doc,
+    [(f'{PHOTOS}/sem_s1_02.jpg', '(c) S1 \u2014 fibre surface morphology'),
+     (f'{PHOTOS}/sem_s1_03.jpg', '(d) S1 \u2014 cellular fibre cross-section')],
+    total_width_in=6.2,
+    cap_text="SEM micrographs of S1 (continued): (c) uncoated fibre surface with "
+             "exposed cell-wall microfibrils; (d) natural tubular cellular "
+             "cross-section of water-hyacinth fibre adding trapped-air lumen volume.")
+
+img(doc, f'{PHOTOS}/sem_s1_04.jpg', 5.0,
+    "SEM micrograph of S1 (high magnification) \u2014 inter-fibre contact zone "
+    "showing purely mechanical interlocking with no binder bridging between fibres.")
+
+heading(doc, "4.8.2  Sample S3 \u2014 Fine 90:10 Corn-Starch Panel", level=3)
+P(doc, "The SEM micrographs of S3 (Figures 25\u201330) present a strikingly "
+  "different microstructure. At low magnification a thin but continuous "
+  "gelatinised-starch matrix is clearly visible coating the fibre surfaces and "
+  "bridging inter-fibre contact points, confirming successful gelatinisation and "
+  "film formation of the corn-starch binder. The fibres remain the dominant "
+  "structural phase and a significant proportion of inter-fibre porosity is "
+  "retained, which explains why S3 still achieves an insulation-grade thermal "
+  "conductivity (K = 0.0608 W/m\u00b7K) only marginally higher than that of the "
+  "binder-less S1 (0.0577 W/m\u00b7K). At higher magnification the starch film "
+  "is seen to form discrete bridges and menisci at fibre\u2013fibre junctions, "
+  "acting as load-transfer points that account for the substantially higher "
+  "compressive strength of 186.0 kPa \u2014 a 97 % improvement over S1.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The starch bridging also partially seals the open pore throats, which "
+  "reduces the accessible pore volume and correspondingly lowers the water "
+  "absorption from 522.86 % (S1) to 507.14 % (S3) \u2014 a modest but measurable "
+  "improvement. The starch film itself is hygroscopic and therefore responsible "
+  "for the higher equilibrium moisture content (23.93 % vs 18.67 %), consistent "
+  "with the literature on starch\u2013fibre composites [5], [8]. No evidence of "
+  "fibre pull-out cavities is observed, suggesting good adhesion between the "
+  "gelatinised starch and the hydroxyl-rich cellulosic fibre surface. Overall, "
+  "the SEM analysis confirms that 10 wt% corn starch produces a well-distributed, "
+  "thin binder film that strengthens inter-fibre bonds without appreciably "
+  "filling the macropores responsible for thermal insulation \u2014 a finding "
+  "that rationalises the optimal mechanical and thermal performance of the 90:10 "
+  "formulation.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+
+img_row(doc,
+    [(f'{PHOTOS}/sem_s2_05.jpg', '(a) S3 \u2014 overview (low magnification)'),
+     (f'{PHOTOS}/sem_s2_06.jpg', '(b) S3 \u2014 starch-coated fibre network')],
+    total_width_in=6.2,
+    cap_text="SEM micrographs of S3 (90:10 corn-starch panel): (a) low-magnification "
+             "overview showing starch-infiltrated porous network; (b) gelatinised "
+             "starch film coating fibre surfaces.")
+
+img_row(doc,
+    [(f'{PHOTOS}/sem_s2_07.jpg', '(c) S3 \u2014 starch binder bridges'),
+     (f'{PHOTOS}/sem_s2_08.jpg', '(d) S3 \u2014 fibre\u2013matrix interface')],
+    total_width_in=6.2,
+    cap_text="SEM micrographs of S3 (continued): (c) starch menisci bridging "
+             "inter-fibre junctions as load-transfer points; (d) fibre\u2013starch "
+             "interface showing good adhesion with no pull-out cavities.")
+
+img_row(doc,
+    [(f'{PHOTOS}/sem_s2_09.jpg', '(e) S3 \u2014 retained macro-porosity'),
+     (f'{PHOTOS}/sem_s2_10.jpg', '(f) S3 \u2014 high-magnification binder film')],
+    total_width_in=6.2,
+    cap_text="SEM micrographs of S3 (continued): (e) macro-pores retained despite "
+             "10 wt% starch addition, consistent with insulation-grade K; "
+             "(f) high-magnification view of the thin continuous starch film "
+             "bridging adjacent fibres.")
+
+heading(doc, "4.8.3  Comparative Microstructural Observations", level=3)
+P(doc, "Table 13 summarises the key microstructural observations from the SEM "
+  "analysis and their correlation with the macroscopic measured properties of "
+  "S1 and S3.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+tbl_cap(doc, "Summary of SEM microstructural observations and correlation with "
+        "macroscopic properties (S1 vs S3).")
+make_table(doc,
+    ["Feature", "S1 \u2014 Fine Binder-less", "S3 \u2014 90:10 Starch",
+     "Property Implication"],
+    [["Binder / matrix",
+      "Absent; purely mechanical inter-fibre contact",
+      "Thin continuous starch film; discrete bridges at junctions",
+      "S3 compressive strength 97 % higher"],
+     ["Pore structure",
+      "Large, interconnected open pores; very porous",
+      "Pores partially bridged; macro-porosity retained",
+      "Both insulation-grade; S3 K only 5 % higher than S1"],
+     ["Fibre surface",
+      "Rough, uncoated; exposed microfibrils visible",
+      "Smooth starch coating on most fibre surfaces",
+      "Improved fibre\u2013matrix adhesion in S3"],
+     ["Fibre lumen",
+      "Open tubular lumen; additional trapped-air volume",
+      "Lumen partially infiltrated by starch gel",
+      "S1 marginally lower K due to more trapped air"],
+     ["Inter-fibre bonding",
+      "Friction and mechanical interlocking only",
+      "Starch adhesive menisci \u2014 load-transfer points",
+      "Explains higher UCT of S3 (186 vs 94.4 kPa)"],
+     ["Pore throat sealing",
+      "All pores fully accessible to water",
+      "Some pore throats sealed by starch film",
+      "S3 WA slightly lower (507 % vs 523 %)"]],
+    col_widths=[1.25, 1.6, 1.7, 2.0], font_size=9.0, zebra=True)
+P(doc, "The SEM evidence collectively supports the conclusion that 10 wt% corn "
+  "starch is the optimal binder loading for this system: it introduces sufficient "
+  "bonding to approximately double the compressive strength while preserving "
+  "enough open porosity to maintain insulation-grade thermal conductivity. "
+  "Increasing the starch to 30 wt% (S4) would be expected to produce a far "
+  "denser, more continuous matrix that fills the macro-pores, consistent with "
+  "the three-fold rise in K and the paradoxically low strength caused by the "
+  "plasticised, moisture-laden starch phase observed for S4 in Section 4.4.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
 # ─────────────────────────────────────────────────────────────────────────────
@@ -1640,6 +1783,13 @@ for c in [
     "formulation, uniquely combining insulation-grade thermal conductivity with "
     "the highest mechanical strength, and is therefore recommended as the optimal "
     "formulation from this study.",
+    "SEM analysis confirmed that 10 wt% corn starch forms a thin, well-"
+    "distributed binder film that bridges inter-fibre junctions and doubles "
+    "compressive strength without appreciably filling the macropores that govern "
+    "thermal insulation. The binder-less panel (S1) shows a purely open fibre "
+    "network with exposed microfibrils, while S3 retains comparable porosity "
+    "with added starch bridges at contact points \u2014 a microstructural "
+    "explanation consistent with all the measured property trends.",
 ]:
     pp = doc.add_paragraph(style='List Number')
     pp.paragraph_format.line_spacing = 1.5
@@ -1657,8 +1807,9 @@ for f in [
     "micro-void formation noted by Abral et al. [10].",
     "Flame retardancy: incorporate eco-friendly retardants such as borax, boric "
     "acid or ammonium polyphosphate, and evaluate LOI and UL-94 ratings [9].",
-    "Complete SEM and FTIR characterization to correlate microstructure and "
-    "chemistry with the measured properties.",
+    "Complete FTIR characterization to correlate fibre surface chemistry "
+    "with the measured mechanical and moisture-resistance properties, "
+    "complementing the SEM microstructural analysis completed in this work.",
     "Optimise binder content between 10 % and 30 % to refine the strength\u2013"
     "thermal trade-off, and explore hybrid binders (e.g. starch\u2013chitosan).",
     "Hot-pressing trials to densify panels in a controlled manner and study the "
@@ -1904,6 +2055,19 @@ def cv(doc, name, enrol):
     P(doc, "CURRICULUM VITAE", size=14, bold=True,
       align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
     hrule(doc)
+    # Two-column table: info on left, passport photo box on right
+    tbl = doc.add_table(rows=1, cols=2)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    # remove borders
+    tblPr2 = tbl._tbl.tblPr
+    borders2 = OxmlElement('w:tblBorders')
+    for edge in ('top','left','bottom','right','insideH','insideV'):
+        e2 = OxmlElement(f'w:{edge}'); e2.set(qn('w:val'),'none'); borders2.append(e2)
+    tblPr2.append(borders2)
+    info_cell = tbl.rows[0].cells[0]
+    info_cell.width = Inches(4.2)
+    photo_cell = tbl.rows[0].cells[1]
+    photo_cell.width = Inches(2.0)
     rows = [
         ("NAME", name),
         ("ENROLMENT NO.", enrol),
@@ -1913,23 +2077,37 @@ def cv(doc, name, enrol):
         ("PHONE NUMBER", "______________________"),
         ("EMAIL ADDRESS", "______________________"),
     ]
-    t = doc.add_table(rows=0, cols=2)
-    t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    t = info_cell.add_table(rows=0, cols=2)
+    t.alignment = WD_TABLE_ALIGNMENT.LEFT
     for k, v in rows:
         c = t.add_row().cells
-        c[0].width = Inches(2.2); c[1].width = Inches(4.0)
+        c[0].width = Inches(2.0); c[1].width = Inches(2.2)
         p0 = c[0].paragraphs[0]; r0 = p0.add_run(k)
         r0.font.name = FONT; r0.font.size = Pt(12); r0.bold = True
         p0.paragraph_format.space_after = Pt(4)
         p1 = c[1].paragraphs[0]; r1 = p1.add_run(": " + v)
         r1.font.name = FONT; r1.font.size = Pt(12)
         p1.paragraph_format.space_after = Pt(4)
-    # remove borders
-    tblPr = t._tbl.tblPr
-    borders = OxmlElement('w:tblBorders')
+    # remove inner table borders
+    tblPr3 = t._tbl.tblPr
+    borders3 = OxmlElement('w:tblBorders')
     for edge in ('top','left','bottom','right','insideH','insideV'):
-        e = OxmlElement(f'w:{edge}'); e.set(qn('w:val'),'none'); borders.append(e)
-    tblPr.append(borders)
+        e3 = OxmlElement(f'w:{edge}'); e3.set(qn('w:val'),'none'); borders3.append(e3)
+    tblPr3.append(borders3)
+    # Passport photo box in right cell
+    pp_para = photo_cell.paragraphs[0]
+    pp_para.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    pp_para.paragraph_format.space_before = Pt(4)
+    pp_para.paragraph_format.space_after = Pt(4)
+    pPr_ph = pp_para._p.get_or_add_pPr()
+    pbdr_ph = OxmlElement('w:pBdr')
+    for side in ('top','bottom','left','right'):
+        b_ph = OxmlElement(f'w:{side}')
+        b_ph.set(qn('w:val'),'single'); b_ph.set(qn('w:sz'),'12')
+        b_ph.set(qn('w:space'),'8'); b_ph.set(qn('w:color'),'444444')
+        pbdr_ph.append(b_ph)
+    pPr_ph.append(pbdr_ph)
+    run_add(pp_para, "\n\n  Passport\n  Photo\n\n", size=11, italic=True, color=GREY)
 
     P(doc, "QUALIFICATION", size=12, bold=True, space_before=10, space_after=4)
     make_table(doc,
@@ -1959,31 +2137,6 @@ cv(doc, "Akshita Sen", "2022BCHE037")
 page_break(doc)
 
 print("Brief Bio Data (CVs) added.")
-
-# ─────────────────────────────────────────────────────────────────────────────
-#  RESEARCH PUBLICATIONS
-# ─────────────────────────────────────────────────────────────────────────────
-P(doc, "RESEARCH PUBLICATIONS", size=15, bold=True,
-  align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=10)
-hrule(doc)
-P(doc, "Work arising from this project is being prepared for communication. The "
-  "publications/presentations associated with this project are listed below; the "
-  "list is to be updated by the candidates as the work is communicated.",
-  align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
-for item in [
-    "S. Karloopia, M. Haider and A. Sen, \u201cDevelopment and characterization of "
-    "bio-composites from waste aquatic biomass for sustainable insulation,\u201d "
-    "(manuscript under preparation), 2026.",
-    "Poster/oral presentation, Department of Chemical Engineering, NIT Srinagar "
-    "(to be updated).",
-]:
-    pp = doc.add_paragraph(style='List Bullet')
-    pp.paragraph_format.line_spacing = 1.5
-    pp.paragraph_format.space_after = Pt(6)
-    r = pp.add_run(item); r.font.name = FONT; r.font.size = Pt(11.5)
-page_break(doc)
-
-print("Research Publications added.")
 
 # ─────────────────────────────────────────────────────────────────────────────
 #  APPENDICES
