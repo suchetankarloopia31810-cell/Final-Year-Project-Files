@@ -51,13 +51,11 @@ All numbers and the contents pages then populate automatically.
 
 ## Still to be completed by you (placeholder boxes are already in place)
 
-1. **Figure 1** — Dal Lake collection-site photograph.
-2. **Figure 2** — biomass collection / washing photographs.
-3. **Figure 3** — mixer-grinder photograph.
-4. **Figure 9** — cold-pressing and oven-drying photographs.
-5. **Figure 20** — SEM micrographs (pending).
-6. **Brief Bio Data (CVs)** — fill DOB, father's name, address, phone, email, 10th/12th school & marks for all 3 students.
-7. **Appendix A** — paste the plagiarism (similarity) report from your supervisor.
+1. **Figures 1, 2, 3, 9** — Dal Lake, biomass collection, mixer-grinder, cold-pressing/oven-drying photographs (placeholder boxes in place).
+2. **Brief Bio Data (CVs)** — fill DOB, father's name, address, phone, email, 10th/12th school & marks for all 3 students.
+3. **Appendix A** — paste the plagiarism (similarity) report from your supervisor.
+
+> **SEM results have been fully incorporated** (Sections 3.6.6 and 4.8) with all 11 micrographs (S1: 5 images, S3: 6 images) and complete microstructural analysis.
 
 ---
 
