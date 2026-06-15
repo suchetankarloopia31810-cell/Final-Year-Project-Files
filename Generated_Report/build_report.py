@@ -468,45 +468,41 @@ page_break(doc)
 P(doc, "ABSTRACT", size=15, bold=True,
   align=WD_ALIGN_PARAGRAPH.CENTER, color=ACCENT, space_after=12)
 hrule(doc)
-P(doc, "Buildings account for a large fraction of global energy use, and most of "
-  "the insulation used to cut that demand is far from green. Expanded polystyrene "
-  "(EPS), polyurethane (PU) foam and glass wool are either made from petroleum or "
-  "are energy-intensive to manufacture, which has pushed researchers to look for "
-  "sustainable materials made from renewable or waste resources. At the same time, "
-  "the invasive weeds water hyacinth (Eichhornia crassipes) and water lily "
-  "(Nymphaea spp.) continue to choke Dal Lake in Srinagar, a Ramsar wetland of "
-  "roughly 18 km\u00b2 that is badly affected by eutrophication. These weeds are "
-  "cleared in large quantities every year but are usually thrown away, so they "
-  "form a steady and essentially free stream of waste biomass. This project links "
-  "the two problems together by turning that waste biomass into bio-composite "
-  "insulation panels.",
+P(doc, "Buildings eat up a huge share of the world's energy, and most of what we "
+  "use to insulate them is anything but green. Expanded polystyrene (EPS), "
+  "polyurethane (PU) foam, glass wool \u2014 they are either pulled from petroleum "
+  "or cooked with a lot of heat, which is why researchers keep hunting for greener "
+  "options built from renewable or waste material. Meanwhile, two invasive weeds "
+  "\u2014 water hyacinth (Eichhornia crassipes) and water lily (Nymphaea spp.) "
+  "\u2014 keep choking Dal Lake in Srinagar, a Ramsar wetland of about 18 km\u00b2 "
+  "that eutrophication has hit hard. Tonnes of the stuff get cleared every year "
+  "and then simply thrown away, leaving a steady, basically free supply of waste "
+  "biomass. This project ties the two problems together, turning that waste into "
+  "bio-composite insulation panels.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
-P(doc, "Four formulations were prepared from oven-dried biomass that had been "
-  "ground and classified using ASTM E11 sieves: a coarse binder-less panel (S1), "
-  "a fine binder-less panel (S2), and two fine panels held together with "
-  "gelatinised food-grade corn starch at biomass:starch ratios of 90:10 (S3) and "
-  "70:30 (S4). We deliberately avoided synthetic polymers and chemical "
-  "crosslinkers altogether. Each panel was then tested for moisture content "
-  "(ASTM D4442), bulk density (ASTM D1037), water absorption (ASTM D570), "
-  "unconfined compressive strength (Baker Type K12 UCT apparatus) and thermal "
-  "conductivity (KD2 Pro TR-3 transient line-source probe, ASTM D5334), with "
-  "three replicates run for every test.",
+P(doc, "Four formulations were made from oven-dried biomass, ground and sorted on "
+  "ASTM E11 sieves: a coarse binder-less panel (S1), a fine binder-less panel "
+  "(S2), and two fine panels held together with gelatinised food-grade corn "
+  "starch at biomass:starch ratios of 90:10 (S3) and 70:30 (S4). No synthetic "
+  "polymers, no chemical crosslinkers \u2014 that was a deliberate choice. Every "
+  "panel was then put through its paces: moisture content (ASTM D4442), bulk "
+  "density (ASTM D1037), water absorption (ASTM D570), unconfined compressive "
+  "strength (Baker Type K12 UCT apparatus) and thermal conductivity (KD2 Pro TR-3 "
+  "transient line-source probe, ASTM D5334), with three replicates run for each "
+  "test.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
-P(doc, "The fine binder-less panel (S2) and the 90:10 starch panel (S3) reached "
-  "insulation-grade thermal conductivities of 0.0577 and 0.0608 W/m\u00b7K "
-  "respectively, both comfortably under the 0.065 W/m\u00b7K limit set by "
-  "ASTM C168. The 90:10 panel (S3) also gave the highest unconfined compressive "
-  "strength at 186.0 kPa, a 97 % gain over the binder-less fine panel, which "
-  "points to 10 wt% corn starch as the sweet spot for binder content. The "
-  "high-starch panel (S4, 70:30) was a more puzzling case: it absorbed the least "
-  "water (280 %), yet it was also the weakest (26.8 kPa) and conducted heat about "
-  "three times faster (0.1846 W/m\u00b7K). We attribute this to an excess of "
-  "plasticised starch and a high residual moisture content of 41.18 %. Taken "
-  "together, the results make the 90:10 biomass:starch panel (S3) the best "
-  "all-round formulation, since it combines insulation-grade thermal performance "
-  "with the highest strength, and they show that an invasive aquatic weed can "
-  "realistically be turned into a workable, biodegradable building-insulation "
-  "material.",
+P(doc, "Two panels came in as proper insulation. The fine binder-less S2 and the "
+  "90:10 starch panel S3 reached thermal conductivities of 0.0577 and 0.0608 "
+  "W/m\u00b7K \u2014 both sitting comfortably under the 0.065 W/m\u00b7K line drawn "
+  "by ASTM C168. S3 also turned out strongest, hitting 186.0 kPa in unconfined "
+  "compression, a 97 % jump over the binder-less fine panel, which pegs 10 wt% "
+  "corn starch as the sweet spot for binder. The high-starch S4 (70:30) was the "
+  "odd one out: it soaked up the least water (280 %), yet it was also the weakest "
+  "(26.8 kPa) and let heat through about three times faster (0.1846 W/m\u00b7K) "
+  "\u2014 blame an excess of plasticised starch and a stubborn 41.18 % moisture "
+  "content. Put it all together and the 90:10 panel (S3) wins on balance, pairing "
+  "insulation-grade heat performance with the best strength, and it shows that an "
+  "invasive weed really can become a workable, biodegradable insulation material.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=10)
 pk = doc.add_paragraph(); pk.paragraph_format.space_after = Pt(6)
 run_add(pk, "Keywords: ", size=12, bold=True)
@@ -626,73 +622,67 @@ heading(doc, "CHAPTER 1", level=1, space_before=0)
 heading(doc, "INTRODUCTION", level=1, space_before=2)
 
 heading(doc, "1.1  Background", level=2)
-P(doc, "Thermal insulation is one of the cheapest and most effective ways to cut "
-  "energy use in buildings, which are responsible for a large slice of global "
-  "energy consumption and greenhouse-gas emissions. The trouble is that most "
-  "insulation on the market today \u2014 expanded polystyrene (EPS), extruded "
-  "polystyrene (XPS), polyurethane (PU) foam, glass wool and mineral wool \u2014 "
-  "is either petroleum-derived or energy-intensive to make. These products do not "
-  "biodegrade, they pile up in landfills once their service life ends, and the "
-  "organic foams among them burn readily and give off toxic gases when they do "
-  "[1], [7]. With circular-economy thinking and carbon-footprint reduction now "
-  "high on the agenda, attention has shifted towards insulation made from "
-  "renewable and waste lignocellulosic resources.",
+P(doc, "One way to cut energy use in buildings? Better thermal insulation \u2014 "
+  "it is cheap, it is effective, and it matters because structures guzzle power "
+  "worldwide. Most store-bought insulators today are EPS, XPS, PU foam, glass wool "
+  "and mineral wool. They are made from oil, or cooked using massive heat. Toss "
+  "them out and they will not rot away. Some, like the plastic foams, catch fire "
+  "easily and spew poisons when burned [1], [7]. Lately the rules have been "
+  "shifting toward reuse and lower emissions, so scientists are looking harder at "
+  "plant-based options \u2014 stuff grown fresh each season, even leftovers from "
+  "farming and woodwork, now feeds these new materials.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "Natural-fibre bio-composites are an attractive alternative for several "
-  "reasons. They are renewable and biodegradable, they are light, their porous "
-  "cellular structure gives them a naturally low thermal conductivity, and they "
-  "can often be made cheaply from agricultural or aquatic waste. Researchers have "
-  "tried a long list of lignocellulosic feedstocks for insulation \u2014 rice "
-  "straw, corn cob, coir, hemp, flax, kenaf, sugarcane bagasse, pineapple leaf "
-  "and date-palm waste, to name a few [4], [6]. Of the aquatic options, water "
-  "hyacinth (Eichhornia crassipes) stands out because it is abundant, grows "
-  "extremely fast and has a high cellulose content.",
+P(doc, "Bio-composites made from natural fibres stand out \u2014 they come from "
+  "renewable sources, break down on their own, weigh less than many materials, and "
+  "resist heat flow thanks to the tiny air pockets locked inside them, all while "
+  "staying cheap when sourced from leftover farm or water plants. Rice straw steps "
+  "in, along with corn cobs, coconut husks, hemp stalks, flax stems, kenaf, "
+  "sugarcane residue, pineapple leaves, even palm-tree scraps \u2014 each one "
+  "tested for how well it keeps warmth trapped [4], [6]. Floating on rivers and "
+  "lakes, one plant shows up again and again: water hyacinth, known as Eichhornia "
+  "crassipes. It grows fast, spreads widely and packs plenty of cellulose, which "
+  "is exactly what makes researchers take notice.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "How well a material insulates is captured mainly by its thermal "
-  "conductivity, K, measured in watts per metre-kelvin (W/m\u00b7K). The lower the "
-  "K, the better the insulator, because less heat passes through the material for "
-  "a given temperature difference. Lightweight insulators get their low "
-  "conductivity from the large amount of still air trapped inside a cellular or "
-  "fibrous solid; air on its own conducts heat very poorly, at roughly "
-  "0.026 W/m\u00b7K. Anything that pushes this trapped air out \u2014 "
-  "densification, void filling, or above all moisture getting in \u2014 raises the "
-  "effective conductivity and spoils the insulation. Water conducts heat at about "
-  "0.6 W/m\u00b7K, some 23 times better than air, which is exactly why keeping "
-  "moisture out keeps coming up as a problem in bio-based insulation.",
+P(doc, "Heat-flow resistance in insulation comes down to one number \u2014 thermal "
+  "conductivity, called K, measured in watts per metre-kelvin (W/m\u00b7K). The "
+  "smaller the K, the slower heat moves through. Those tiny pockets of still air "
+  "locked inside a foam or fibre structure are what make light materials so good "
+  "at blocking heat; air on its own carries almost none, its conductivity sitting "
+  "near 0.026 W/m\u00b7K. Push that air out \u2014 through compaction, gaps filling "
+  "in, or especially water sneaking in \u2014 and the material starts letting far "
+  "more heat pass. Liquid water, at roughly 0.6 W/m\u00b7K, shifts heat about 23 "
+  "times faster than air. Because dampness wrecks efficiency so quickly, keeping "
+  "these biological insulations dry shapes much of how they are built.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "A bio-composite combines a natural fibre or particle reinforcement with a "
-  "matrix, or binder, so that the resulting material performs better than either "
-  "ingredient would on its own. Here the reinforcement is lignocellulosic aquatic "
-  "biomass and the matrix is a biodegradable polysaccharide binder. The appeal of "
-  "such composites lies in their renewability, biodegradability, low density and "
-  "low embodied energy and carbon, along with the fact that they put a waste "
-  "stream to good use. Their weak points are equally well known: they take up a "
-  "lot of moisture, their mechanical strength is modest, and they are flammable. "
-  "These are precisely the shortcomings that tuning particle size, binder type "
-  "and binder content is meant to address, and they are what this project sets "
-  "out to study in a systematic way.",
+P(doc, "From tiny plant fibres mixed into a sticky binder come materials stronger "
+  "than either part alone. Here, water-grown woody matter pairs with a sugar-based "
+  "glue to form them. What makes these blends stand out? They grow back, break "
+  "down naturally, weigh little, lock in less carbon, need less heat to make, and "
+  "turn waste into something useful. Yet the problems show up too \u2014 they soak "
+  "up damp, lack toughness, and catch fire too easily. Tackling those weak spots "
+  "means adjusting how fine the chunks are, what binder gets used, and just how "
+  "much of it holds everything together \u2014 which is the work pushed forward in "
+  "this study.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "1.2  The Dal Lake Problem: An Invasive Weed as a Resource", level=2)
-P(doc, "Dal Lake in Srinagar, Jammu & Kashmir, is one of the Himalayas' best-known "
-  "urban lakes and a designated Ramsar wetland of roughly 18 km\u00b2. Over the "
-  "last few decades it has declined badly, mainly through eutrophication fed by "
-  "untreated sewage, the spread of the city into its catchment and heavy nutrient "
-  "loading. One of the most obvious results of all that nutrient enrichment is the "
-  "runaway growth of free-floating invasive weeds, chiefly water hyacinth "
-  "(Eichhornia crassipes) and water lily (Nymphaea spp.). They spread into thick "
-  "surface mats that starve the water of oxygen, cut out sunlight, wreck native "
-  "fish breeding grounds, get in the way of boats and gradually turn open water "
-  "into marsh.",
+P(doc, "Dal Lake, in Srinagar, Jammu & Kashmir, is one of the Himalayas' most "
+  "famous urban lakes and a listed Ramsar wetland of about 18 km\u00b2. The last "
+  "few decades have not been kind to it. Eutrophication \u2014 fed by raw sewage, "
+  "a city creeping into its catchment, and a steady nutrient load \u2014 has "
+  "dragged it into steep decline. One sign of all that nutrient overload jumps "
+  "out: free-floating invasive weeds running wild, mostly water hyacinth "
+  "(Eichhornia crassipes) and water lily (Nymphaea spp.). They knit into thick "
+  "surface mats that choke off oxygen, block the sunlight, ruin native "
+  "fish-breeding grounds, snag boats, and slowly turn open water into marsh.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "Every year, mechanical de-weeding pulls large amounts of this biomass out "
-  "of the lake, but the harvested material is treated as rubbish and either dumped "
-  "or left to rot, releasing methane and feeding the same nutrients back into the "
-  "water. The upshot is a continuous, free and otherwise troublesome supply of "
-  "biomass. Turning this weed into something useful tackles two problems at once: "
-  "it gives weed removal an economic payoff and an end use, and it provides a "
-  "renewable raw material for sustainable insulation. That dual benefit is the "
-  "central idea behind this project.",
+P(doc, "Every year the de-weeding machines haul tonnes of this biomass out of the "
+  "lake \u2014 and then it is treated as rubbish, dumped or left to rot, leaking "
+  "methane and handing the same nutrients straight back to the water. So there it "
+  "sits: a constant, free, and frankly troublesome supply of biomass. Put it to "
+  "work and you solve two problems at once \u2014 weed removal finally earns its "
+  "keep and gets a purpose, and sustainable insulation gets a renewable raw "
+  "material. That double win is the whole idea behind this project.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 img(doc, f'{PHOTOS}/__missing_dallake.jpg', 5.6,
@@ -701,25 +691,23 @@ img(doc, f'{PHOTOS}/__missing_dallake.jpg', 5.6,
     placeholder_label="Figure: Dal Lake collection site photograph")
 
 heading(doc, "1.3  Motivation", level=2)
-P(doc, "Three things together motivated this work. The first is the environmental "
-  "and health baggage that comes with petroleum-based synthetic insulation. The "
-  "second is the pressing need to manage and make use of the invasive weed that "
-  "clogs Dal Lake. The third is recent evidence that water-hyacinth fibre can "
-  "perform well as a low-thermal-conductivity natural material [2], [3]. By "
-  "choosing a food-grade, biodegradable corn-starch binder instead of synthetic "
-  "resins or chemical crosslinkers, we aimed to make a fully bio-based, low-cost "
-  "and environmentally harmless insulation panel that can be produced with "
-  "simple, scalable equipment.",
+P(doc, "Three things drove this work. First, the environmental and health baggage "
+  "that trails petroleum-based synthetic insulation. Second, the urgent need to "
+  "deal with \u2014 and actually use \u2014 the invasive weed clogging Dal Lake. "
+  "Third, fresh evidence that water-hyacinth fibre holds up well as a "
+  "low-conductivity natural material [2], [3]. By reaching for a food-grade, "
+  "biodegradable corn-starch binder instead of synthetic resins or crosslinkers, "
+  "we set out to build a fully bio-based, low-cost, harmless insulation panel "
+  "\u2014 one that simple, scalable kit can actually produce.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "1.4  Problem Statement", level=2)
-P(doc, "Waste aquatic biomass is a promising green substitute for synthetic "
-  "insulation, but on its own it cannot be used directly. It is too weak "
-  "mechanically, it soaks up too much moisture, and it catches fire easily. "
-  "Overcoming these limitations calls for an engineered bio-composite \u2014 the "
-  "right binder paired with the right processing route \u2014 that delivers enough "
-  "structural integrity, dimensional stability and insulating performance while "
-  "still staying biodegradable.",
+P(doc, "Waste aquatic biomass looks like a promising green stand-in for synthetic "
+  "insulation, but you cannot just use it as-is. It is mechanically weak, it "
+  "drinks up moisture, and it burns easily. Getting past those flaws takes an "
+  "engineered bio-composite \u2014 the right binder, the right processing route "
+  "\u2014 that holds together, keeps its shape, insulates properly, and still "
+  "breaks down naturally at the end.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "1.5  Objectives", level=2)
@@ -746,27 +734,26 @@ for i, obj in enumerate([
     r = pp.add_run(obj); r.font.name = FONT; r.font.size = Pt(12)
 
 heading(doc, "1.6  Scope of the Work", level=2)
-P(doc, "This study is concerned with fabricating four bio-composite formulations "
-  "at laboratory scale and characterising their physical, mechanical and thermal "
-  "behaviour. The testing programme covers moisture content (ASTM D4442), bulk "
-  "density (ASTM D1037), water absorption (ASTM D570), unconfined compressive "
-  "strength (Baker Type K12 apparatus), thermal conductivity (KD2 Pro TR-3 probe, "
-  "ASTM D5334) and scanning electron microscopy (SEM) of the binder-less (S1) and "
-  "90:10 starch-bound (S3) panels to examine their microstructure. Flammability "
-  "testing, hydrophobic surface treatments and a full life-cycle assessment are "
-  "left for future work and are not covered here.",
+P(doc, "This study sticks to making four bio-composite formulations in the lab and "
+  "measuring how they behave physically, mechanically and thermally. The test list "
+  "runs through moisture content (ASTM D4442), bulk density (ASTM D1037), water "
+  "absorption (ASTM D570), unconfined compressive strength (Baker Type K12 "
+  "apparatus), thermal conductivity (KD2 Pro TR-3 probe, ASTM D5334), and scanning "
+  "electron microscopy (SEM) of the binder-less (S1) and 90:10 starch-bound (S3) "
+  "panels to see the microstructure. Flammability testing, hydrophobic coatings "
+  "and a full life-cycle assessment are jobs for later \u2014 they are not part of "
+  "this work.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "1.7  Organisation of the Report", level=2)
-P(doc, "The rest of the report is organised as follows. Chapter 1 has set out the "
-  "background, motivation, problem statement and objectives. Chapter 2 reviews the "
-  "literature on natural-fibre and water-hyacinth-based insulation and pins down "
-  "the research gap. Chapter 3 covers the design, experimental setup and "
-  "methodology, including the raw materials, binder preparation, sample "
-  "fabrication and the test methods and equipment. Chapter 4 reports the results "
-  "and discusses them alongside published work. Chapter 5 draws the findings "
-  "together, states the main conclusions and outlines where the work could go "
-  "next.",
+P(doc, "Here is how the rest of the report runs. Chapter 1 has laid out the "
+  "background, the motivation, the problem and the objectives. Chapter 2 digs "
+  "through the literature on natural-fibre and water-hyacinth insulation and pins "
+  "down the gap. Chapter 3 walks through the design, the setup and the methodology "
+  "\u2014 raw materials, binder prep, sample-making, and the test methods and kit. "
+  "Chapter 4 lays out the results and talks them over against published work. "
+  "Chapter 5 pulls it all together, states the main conclusions, and points to "
+  "where the work could head next.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
@@ -781,79 +768,74 @@ heading(doc, "CHAPTER 2", level=1, space_before=0)
 heading(doc, "LITERATURE REVIEW", level=1, space_before=2)
 
 heading(doc, "2.1  Overview", level=2)
-P(doc, "Plenty of research has looked at natural fibres and agricultural or "
-  "aquatic wastes as raw materials for sustainable insulation composites. This "
-  "chapter walks through the studies most relevant to the present work, paying "
-  "particular attention to water-hyacinth-based composites, natural binder "
-  "systems, fire-retardancy and what happens to these materials at end of life. "
-  "It sets the performance benchmarks that this project is measured against and "
-  "marks out the gap that the work aims to fill.",
+P(doc, "Loads of research has gone into natural fibres and farm or aquatic waste "
+  "as the raw stuff of sustainable insulation composites. This chapter runs "
+  "through the studies that matter most here \u2014 water-hyacinth composites "
+  "above all, plus natural binders, fire-retardancy, and what becomes of these "
+  "materials once they are done. It fixes the benchmarks this project gets judged "
+  "against, and it marks the gap the work is trying to close.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "2.2  Water-Hyacinth-Based Insulation Composites", level=2)
-P(doc, "Salas-Ruiz et al. [2] studied binder-less particle boards made from "
-  "water-hyacinth petioles and measured thermal conductivities as low as "
+P(doc, "Salas-Ruiz et al. [2] looked at binder-less particle boards built from "
+  "water-hyacinth petioles and clocked thermal conductivities as low as "
   "0.047 W/m\u00b7K for staple-fibre boards and around 0.065 W/m\u00b7K for pulp "
-  "boards. Water absorption, though, was very high at 450\u2013555 %, which neatly "
-  "captures the two sides of these boards: they insulate beautifully but are very "
-  "sensitive to moisture. Philip and Rakendu [3] went a different route with a "
-  "water-hyacinth\u2013cement composite, reaching a thermal conductivity of "
-  "0.0765 W/m\u00b7K at a density of 0.47 g/cm\u00b3, with a flexural strength of "
-  "about 0.35 MPa and water absorption close to 98 %. Jaktorn and Jiajitsawat [1] "
-  "bonded water-hyacinth fibre with natural rubber latex and obtained very low "
-  "conductivities of 0.0246\u20130.0305 W/m\u00b7K, but their boards still failed "
-  "the relevant industrial standard on water absorption \u2014 once again, "
-  "moisture resistance was the sticking point.",
+  "boards. The catch? Water absorption ran sky-high at 450\u2013555 % \u2014 which "
+  "sums up these boards in a sentence: superb insulators, hopeless with moisture. "
+  "Philip and Rakendu [3] took another path, a water-hyacinth\u2013cement "
+  "composite, landing at 0.0765 W/m\u00b7K and a density of 0.47 g/cm\u00b3, with "
+  "flexural strength around 0.35 MPa and water absorption close to 98 %. Jaktorn "
+  "and Jiajitsawat [1] glued water-hyacinth fibre with natural rubber latex and "
+  "pulled conductivities right down to 0.0246\u20130.0305 W/m\u00b7K \u2014 yet "
+  "their boards still flunked the industry water-absorption standard. Same old "
+  "sticking point: moisture.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "Anjani et al. [6] made water-hyacinth\u2013sugarcane-bagasse fibre\u2013"
-  "epoxy composites for cool-box insulation, with their best configuration giving "
-  "a thermal conductivity of about 0.1987 W/m\u00b7K and a maximum bending "
-  "strength of 263 kgf/cm\u00b2. Chaireh et al. [5] worked on starch\u2013"
-  "water-hyacinth foams for food packaging and found a 5 wt% water-hyacinth "
-  "loading to be optimal, with the elastic modulus reaching about 232 MPa. A "
-  "beeswax coating cut water absorption sharply in their work, which is doubly "
-  "useful here: it shows starch is a workable natural binder for water hyacinth "
-  "and that beeswax makes an effective hydrophobic treatment.",
+P(doc, "Anjani et al. [6] built water-hyacinth\u2013sugarcane-bagasse fibre\u2013"
+  "epoxy composites for cool-box insulation; their best mix gave about 0.1987 "
+  "W/m\u00b7K and a top bending strength of 263 kgf/cm\u00b2. Chaireh et al. [5] "
+  "went after starch\u2013water-hyacinth foams for food packaging and found 5 wt% "
+  "water hyacinth to be the sweet spot, with the elastic modulus climbing to "
+  "around 232 MPa. A beeswax coating slashed their water absorption \u2014 handy "
+  "on two counts here: it proves starch works as a natural binder for water "
+  "hyacinth, and it flags beeswax as a solid hydrophobic treatment.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "2.3  Binder Systems, Surface Treatment and Fire Retardancy", level=2)
-P(doc, "The binder has a big say in how a natural-fibre composite behaves, both "
-  "mechanically and in the wet. Syamsuri et al. [8] showed that treating "
-  "water-hyacinth fibre with alkali (NaOH) inside a cassava-starch bioplastic "
-  "roughly quadrupled its tensile strength compared with untreated fibre, simply "
-  "by improving how well the fibre stuck to the matrix. Abral et al. [10] sounded "
-  "a note of caution, though: water-hyacinth\u2013polyester composites processed "
-  "while wet came out mechanically weaker, and aggressive alkali treatment opened "
-  "up micro-voids that hurt performance. The lesson is that controlling moisture "
-  "during processing and curing really matters. On the fire-safety side, "
-  "Suwanniroj and Suppakarn [9] used water-hyacinth fibre as a bio-based carbon "
-  "source in an intumescent flame-retardant poly(butylene succinate) system and "
-  "achieved a limiting oxygen index of 28.8 %, a UL-94 V-0 rating and a 53 % drop "
-  "in peak heat-release rate.",
+P(doc, "The binder largely decides how a natural-fibre composite holds up \u2014 "
+  "both under load and in the damp. Syamsuri et al. [8] found that soaking "
+  "water-hyacinth fibre in alkali (NaOH) inside a cassava-starch bioplastic "
+  "roughly quadrupled its tensile strength against untreated fibre, just by "
+  "helping the fibre grip the matrix. Abral et al. [10] flagged a warning, though: "
+  "water-hyacinth\u2013polyester composites processed while still wet came out "
+  "weaker, and harsh alkali treatment opened micro-voids that dragged performance "
+  "down. The takeaway \u2014 controlling moisture through processing and curing "
+  "really counts. On fire safety, Suwanniroj and Suppakarn [9] used water-hyacinth "
+  "fibre as a bio-carbon source in an intumescent flame-retardant poly(butylene "
+  "succinate) system and hit a limiting oxygen index of 28.8 %, a UL-94 V-0 "
+  "rating, and a 53 % cut in peak heat-release rate.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "2.4  Conventional Insulation Benchmarks", level=2)
-P(doc, "It helps to put bio-based numbers next to conventional insulation. Jeon "
-  "et al. [7] measured a thermal conductivity of about 0.034 W/m\u00b7K for glass "
-  "wool and noted that moisture getting in can push the conductivity of fibrous "
-  "inorganic insulation up by roughly four times. Bio-based materials share that "
-  "same weakness, which is one more reason to take moisture seriously. The widely "
-  "used cut-off for calling a material insulation-grade is a thermal conductivity "
-  "below 0.065 W/m\u00b7K (ASTM C168), and that is the main performance criterion "
-  "adopted in this study.",
+P(doc, "It helps to set the bio-based figures beside conventional insulation. Jeon "
+  "et al. [7] measured glass wool at about 0.034 W/m\u00b7K and pointed out that "
+  "moisture creeping in can roughly quadruple the conductivity of fibrous "
+  "inorganic insulation. Bio-based materials carry that same weakness \u2014 one "
+  "more reason to treat moisture as a real threat. The common line for calling a "
+  "material insulation-grade is a thermal conductivity under 0.065 W/m\u00b7K "
+  "(ASTM C168), and that is the yardstick this study runs with.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "2.5  Extended Literature Survey", level=2)
-P(doc, "Table 1 gathers a broader survey of recent studies, mostly from "
-  "2008\u20132025, on natural-fibre and waste-derived insulation and bio-composite "
-  "materials. For each one it lists the materials studied, the key conditions, the "
-  "main findings and the research gaps the authors themselves point out. The "
-  "studies span a wide range of bio-fibres \u2014 rice straw [4], corn cob [11], "
-  "mycelium [12], flax and hemp [14], sugarcane bagasse [18], pineapple-leaf "
-  "fibre [19], hemp in a PU matrix [20], kenaf [21], coir [22], bamboo [25] and "
-  "cork composites [20] \u2014 together with reviews of acoustic properties [15], "
-  "fire retardancy [13], aerogel insulants [26], end-of-life management [23] and "
-  "wider progress in bio-based insulation [28], [29].",
+P(doc, "Table 1 pulls together a wider sweep of recent studies, mostly "
+  "2008\u20132025, on natural-fibre and waste-derived insulation and "
+  "bio-composites. For each, it sets down the materials, the key conditions, the "
+  "main findings, and the gaps the authors themselves call out. The work spans a "
+  "broad cast of bio-fibres \u2014 rice straw [4], corn cob [11], mycelium [12], "
+  "flax and hemp [14], sugarcane bagasse [18], pineapple-leaf fibre [19], hemp in "
+  "a PU matrix [20], kenaf [21], coir [22], bamboo [25] and cork composites [20] "
+  "\u2014 alongside reviews of acoustic properties [15], fire retardancy [13], "
+  "aerogel insulants [26], end-of-life handling [23], and the wider march of "
+  "bio-based insulation [28], [29].",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Extended literature survey of natural-fibre and waste-derived "
@@ -989,62 +971,62 @@ P(doc, "* Conditions row for the same study, retained from the project literatur
   "survey for completeness.", size=9.5, italic=True, color=GREY, space_before=4)
 
 heading(doc, "2.6  Pertinent Theory", level=2)
-P(doc, "Heat moves through a porous insulation panel by three routes at once: "
-  "conduction through the solid fibre/binder network and through the gas in the "
-  "pores, convection inside the larger pores, and radiation across pore surfaces. "
-  "In low-density fibrous and particulate insulants the pores are small enough to "
-  "all but shut down convection, so the effective thermal conductivity comes down "
-  "mainly to conduction through the solid and through the trapped air. Because "
-  "still air conducts heat so poorly (\u2248 0.026 W/m\u00b7K), the trick to a good "
-  "insulator is to pack in as many small, isolated air pockets as possible while "
-  "keeping continuous solid pathways to a minimum. That is why a light, porous "
-  "panel beats a dense one, and why moisture is so damaging \u2014 it swaps "
-  "insulating air for far more conductive water.",
+P(doc, "Heat crosses a porous insulation panel by three routes at once: conduction "
+  "through the solid fibre/binder network and through the gas in the pores, "
+  "convection inside the bigger pores, and radiation across pore surfaces. In "
+  "low-density fibrous and particulate insulants the pores are small enough to all "
+  "but kill convection, so the effective conductivity boils down to conduction "
+  "through the solid and through the trapped air. And because still air carries "
+  "heat so badly (\u2248 0.026 W/m\u00b7K), the whole trick is to cram in as many "
+  "small, sealed-off air pockets as you can while leaving as little continuous "
+  "solid as possible. That is why a light, airy panel beats a dense one \u2014 and "
+  "why moisture does so much harm, swapping insulating air for far more conductive "
+  "water.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "Corn starch binds through gelatinisation. Native starch is made up of "
-  "semi-crystalline granules of amylose and amylopectin. Heat it in excess water "
-  "above its gelatinisation temperature (typically 60\u201375 \u00b0C for maize "
-  "starch) and the granules take up water, swell and burst, releasing amylose and "
-  "forming a thick paste. As the paste cools and dries, the loosened starch chains "
-  "re-associate (retrogradation) into a continuous film that bridges and glues the "
-  "biomass particles together, acting as a natural adhesive matrix. How much "
-  "starch is added therefore decides how strongly the particles bond: too little "
-  "and the panel barely holds together, too much and you get a continuous, "
-  "moisture-hungry matrix that fills the very pores doing the insulating. Pinning "
-  "down that trade-off is one of the things this study set out to do.",
+P(doc, "Corn starch binds by gelatinising. Raw starch is a pile of "
+  "semi-crystalline granules of amylose and amylopectin. Heat it in plenty of "
+  "water past its gelatinisation point (usually 60\u201375 \u00b0C for maize "
+  "starch) and the granules drink in water, swell, and burst, spilling amylose and "
+  "turning into a thick paste. As that paste cools and dries, the freed starch "
+  "chains lock back together (retrogradation) into a continuous film that bridges "
+  "the biomass particles and glues them in place \u2014 a natural adhesive matrix. "
+  "So the amount of starch sets the bond strength: too little and the panel barely "
+  "holds, too much and you end up with a continuous, water-hungry matrix that "
+  "plugs the very pores meant to insulate. Nailing down that balance was one of "
+  "the things this study set out to do.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "The transient line heat-source method used to measure thermal conductivity "
-  "rests on the theory of radial heat conduction from an infinitely long line "
-  "source in an infinite medium. A known heat flux is sent along a needle probe "
-  "and the temperature rise is logged over time; the slope of temperature against "
-  "the logarithm of time is inversely proportional to the thermal conductivity of "
-  "the surrounding material. This is the basis of the ASTM D5334 procedure used in "
-  "this work.",
+P(doc, "The transient line heat-source method behind the conductivity measurement "
+  "rests on radial heat conduction from an infinitely long line source in an "
+  "infinite medium. You run a known heat flux along a needle probe and log the "
+  "temperature rise over time; plot temperature against the logarithm of time and "
+  "the slope comes out inversely proportional to the surrounding material's "
+  "thermal conductivity. That is the engine inside the ASTM D5334 procedure used "
+  "here.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "2.7  Research Gap", level=2)
-P(doc, "Taken as a whole, the literature shows that water-hyacinth fibre can hit "
-  "insulation-grade thermal conductivities, but most of the systems that achieve "
-  "this lean on something less than ideal. Some use synthetic matrices (epoxy [6], "
-  "polyester [10], polyurethane [20]); others use energy-intensive binders such as "
-  "cement [3]; and the binder-less boards, while green, soak up huge amounts of "
-  "water and have poor mechanical integrity [2]. Where natural binders are used, "
-  "the target is often a packaging film or foam rather than a building-insulation "
-  "panel [5], and very few studies systematically tune the biomass-to-binder ratio "
-  "of a fully bio-based panel while reporting thermal, mechanical and moisture "
-  "performance side by side. Reviews of bio-based insulants [28], [29] and of "
-  "natural-fibre composites for acoustic [15] and fire-retardant [13] uses confirm "
-  "how broad the field is, yet they also point to the same shortfall: a lack of "
-  "standardised formulations that are characterised across all these properties at "
-  "once. On top of that, no one has reported using aquatic weed specifically from "
-  "Dal Lake, combining the waste-management angle with insulation development.",
+P(doc, "Step back and the literature tells a clear story: water-hyacinth fibre can "
+  "reach insulation-grade conductivities, but nearly every system that gets there "
+  "leans on something less than ideal. Some use synthetic matrices (epoxy [6], "
+  "polyester [10], polyurethane [20]); others reach for energy-hungry binders like "
+  "cement [3]; and the binder-less boards, green as they are, drink up water and "
+  "fall apart mechanically [2]. When natural binders do appear, the goal is "
+  "usually a packaging film or foam, not a building-insulation panel [5], and "
+  "hardly anyone deliberately tunes the biomass-to-binder ratio of a fully "
+  "bio-based panel while reporting thermal, mechanical and moisture numbers side "
+  "by side. Reviews of bio-based insulants [28], [29] and of natural-fibre "
+  "composites for acoustic [15] and fire-retardant [13] uses show how big the "
+  "field is, but they keep circling the same hole: no standardised formulations "
+  "characterised across all these properties at once. And on top of all that, "
+  "nobody has reported using aquatic weed straight from Dal Lake, tying the "
+  "waste-management problem to insulation development.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "This work sets out to close that gap. It fabricates fully bio-based panels "
-  "from Dal-Lake aquatic biomass bound with food-grade corn starch \u2014 no "
-  "synthetic polymers, no crosslinkers \u2014 varies the particle size and the "
-  "biomass:starch ratio in a deliberate way, and characterises the thermal, "
-  "mechanical and moisture properties together so that a single insulation-grade "
-  "formulation can be identified.",
+P(doc, "This work goes straight at that gap. It builds fully bio-based panels from "
+  "Dal-Lake aquatic biomass held together with food-grade corn starch \u2014 no "
+  "synthetic polymers, no crosslinkers \u2014 deliberately varies the particle "
+  "size and the biomass:starch ratio, and measures the thermal, mechanical and "
+  "moisture properties together so one insulation-grade formulation can be picked "
+  "out.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
@@ -1059,21 +1041,21 @@ heading(doc, "CHAPTER 3", level=1, space_before=0)
 heading(doc, "DESIGN, SETUP AND METHODOLOGY", level=1, space_before=2)
 
 heading(doc, "3.1  Raw Materials", level=2)
-P(doc, "The main raw material was waste aquatic biomass \u2014 a mix of water "
-  "hyacinth (Eichhornia crassipes) and water lily (Nymphaea spp.) \u2014 gathered "
-  "by hand from Dal Lake, Srinagar, Jammu & Kashmir (around N 34.08\u00b0, "
-  "E 74.85\u00b0) over October\u2013November 2025. We collected petioles, stems "
-  "and leaves and washed them thoroughly to get rid of mud, debris and any "
-  "biological contaminants. Commercial food-grade corn (maize) starch served as "
-  "the binder, and distilled or tap water was the processing medium. At no point "
-  "did we use synthetic polymers, resins or chemical crosslinkers, so the finished "
-  "composite is fully bio-based and biodegradable.",
+P(doc, "The headline raw material was waste aquatic biomass \u2014 a blend of water "
+  "hyacinth (Eichhornia crassipes) and water lily (Nymphaea spp.) \u2014 pulled by "
+  "hand from Dal Lake, Srinagar, Jammu & Kashmir (around N 34.08\u00b0, "
+  "E 74.85\u00b0) across October\u2013November 2025. We grabbed petioles, stems and "
+  "leaves, then scrubbed them well to clear off mud, debris and anything "
+  "biological. The binder was plain food-grade corn (maize) starch, and distilled "
+  "or tap water did the mixing. Synthetic polymers, resins, chemical crosslinkers? "
+  "None, at any stage \u2014 so the finished composite is fully bio-based and "
+  "breaks down naturally.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "Water hyacinth and water lily are free-floating aquatic plants whose "
-  "petioles and stems have a porous, fibrous, cellulose-rich interior. That "
-  "natural porosity is a bonus for thermal insulation, while the cellulosic fibres "
-  "do the structural reinforcing in the composite. Table 2 lists the materials "
-  "used in the study and what each one does.",
+P(doc, "Water hyacinth and water lily float free on the water, and their petioles "
+  "and stems are porous, fibrous and packed with cellulose inside. That built-in "
+  "porosity is a gift for thermal insulation, while the cellulose fibres do the "
+  "heavy lifting as reinforcement. Table 2 sets out the materials used and the job "
+  "each one does.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Materials used in the study and their function.")
 make_table(doc,
@@ -1094,22 +1076,21 @@ img_row(doc, [(f'{PHOTOS}/__missing_collection.jpg', '(a) Manual collection from
                  "and water lily) from Dal Lake, Srinagar.")
 
 heading(doc, "3.2  Biomass Pre-treatment and Size Reduction", level=2)
-P(doc, "The washed biomass was first left to sun-dry for 5\u20137 days; as it dried "
-  "it turned from green to tan/brown, a clear sign of moisture loss and reduced "
-  "microbial activity. It then went into a laboratory drying oven at "
-  "103 \u00b1 2 \u00b0C for about 24 hours to drive off any remaining moisture and "
-  "give a consistent starting point before grinding (following the drying "
-  "principle of ASTM D4442). Size reduction was done on a mixer-grinder lent by "
-  "the Department of Chemistry, NIT Srinagar (under Prof. Tabassum Ara). The "
-  "ground biomass was then separated on ASTM E11 standard wire-mesh sieves into a "
-  "coarse fraction (> 3 mm; finer than No. 7 mesh) and a fine fraction "
-  "(1.0\u20131.5 mm; No. 12\u2013No. 18 mesh).",
+P(doc, "First the washed biomass sat out to sun-dry for 5\u20137 days; as it dried "
+  "it shifted from green to tan/brown \u2014 a clear tell of moisture leaving and "
+  "microbes slowing down. Then into a lab drying oven at 103 \u00b1 2 \u00b0C for "
+  "roughly 24 hours, to chase out whatever moisture was left and give every batch "
+  "the same starting point before grinding (the drying idea borrowed from "
+  "ASTM D4442). Grinding happened on a mixer-grinder lent by the Department of "
+  "Chemistry, NIT Srinagar (under Prof. Tabassum Ara). The ground biomass then "
+  "went over ASTM E11 wire-mesh sieves and split into a coarse fraction (> 3 mm; "
+  "finer than No. 7 mesh) and a fine one (1.0\u20131.5 mm; No. 12\u2013No. 18 "
+  "mesh).",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "Particle size is a key processing variable. The coarse fraction gives an "
-  "open, loosely interlocked structure, whereas the fine fraction offers far more "
-  "surface area for particles to touch and bond, which yields more cohesive "
-  "panels. The mixer-grinder is shown in Figure 3, the two classified fractions in "
-  "Figure 4 and the sieve set in Figure 5.",
+P(doc, "Particle size matters a lot here. Coarse particles leave an open, "
+  "loosely-knit structure; fine ones offer far more surface for particles to touch "
+  "and bond, so the panels come out more cohesive. The mixer-grinder is in "
+  "Figure 3, the two fractions in Figure 4, and the sieve set in Figure 5.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 img(doc, f'{PHOTOS}/__missing_grinder.jpg', 3.2,
@@ -1128,13 +1109,12 @@ img(doc, f'{PHOTOS}/mesh_machine.jpg', 3.2,
     "classification of the ground biomass.")
 
 heading(doc, "3.3  Binder Preparation (Corn-Starch Gelatinisation)", level=2)
-P(doc, "The natural binder was made by gelatinising food-grade corn starch in "
-  "water on a hot plate fitted with a magnetic stirrer. The starch\u2013water "
-  "mixture was heated to 80\u201390 \u00b0C with constant stirring until it turned "
-  "into a translucent, viscous gel, the sign that the starch granules had fully "
-  "gelatinised. This starch paste was the binder for samples S3 (90:10) and "
-  "S4 (70:30). Samples S1 and S2 had no starch at all and used only 15 % water as "
-  "a temporary processing aid.",
+P(doc, "The natural binder came from gelatinising food-grade corn starch in water "
+  "on a hot plate with a magnetic stirrer. We heated the starch\u2013water mix to "
+  "80\u201390 \u00b0C, stirring the whole time, until it went translucent and thick "
+  "\u2014 the sign the granules had fully gelatinised. That paste was the binder "
+  "for S3 (90:10) and S4 (70:30). S1 and S2 got no starch at all, just 15 % water "
+  "as a temporary processing aid.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 img(doc, f'{PHOTOS}/starch_gelatinisation.jpg', 3.2,
@@ -1142,15 +1122,14 @@ img(doc, f'{PHOTOS}/starch_gelatinisation.jpg', 3.2,
     "stirrer at 80\u201390 \u00b0C.")
 
 heading(doc, "3.4  Composite Fabrication", level=2)
-P(doc, "The classified biomass was mixed with the appropriate binder or water in "
-  "the set proportions and packed into moulds. Flat panels were formed in "
-  "50 \u00d7 50 mm steel moulds, while cylindrical specimens for unconfined "
-  "compression testing were formed in aluminium moulds of 30 mm diameter and "
-  "25 mm height. We cold-pressed the filled moulds by hand to consolidate the "
-  "mixture, squeeze out porosity and improve inter-particle bonding. After "
-  "demoulding, the specimens were oven-dried at 103 \u00b1 2 \u00b0C to constant "
-  "mass, which took about 24 hours. In all, four formulations were produced, "
-  "summarised in Table 3.",
+P(doc, "The sorted biomass was mixed with the right binder or water in the set "
+  "proportions, then packed into moulds. Flat panels took shape in 50 \u00d7 50 mm "
+  "steel moulds; cylinders for the compression tests came from aluminium moulds, "
+  "30 mm across and 25 mm tall. We cold-pressed the filled moulds by hand to pack "
+  "the mix down, push out porosity and tighten the bonding. Out of the mould, the "
+  "specimens went back into the oven at 103 \u00b1 2 \u00b0C until they hit "
+  "constant mass \u2014 about 24 hours. Four formulations came out of this, listed "
+  "in Table 3.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Bio-composite sample fabrication details.")
@@ -1191,20 +1170,19 @@ img_row(doc, [(f'{PHOTOS}/__missing_mould.jpg', '(a) Cold-pressing / mould filli
                  "filled moulds and (b) oven drying at 103 \u00b1 2 \u00b0C.")
 
 heading(doc, "3.5  Process Flow", level=2)
-P(doc, "The whole fabrication sequence \u2014 from collecting the raw material "
-  "through drying, grinding, sieving, binder preparation, mixing, pressing, "
-  "demoulding and curing \u2014 is laid out in the process flowsheet of Figure 10.",
+P(doc, "The full make-it sequence \u2014 collecting the raw material, then drying, "
+  "grinding, sieving, binder prep, mixing, pressing, demoulding and curing \u2014 "
+  "is laid out in the process flowsheet of Figure 10.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 img(doc, f'{CHARTS}/Fig06_Process_Flowsheet.png', 5.6,
     "Process flowsheet for the fabrication of bio-composite insulation panels "
     "from waste aquatic biomass.")
 
 heading(doc, "3.6  Characterization Methods", level=2)
-P(doc, "The panels were tested for their physical, mechanical and thermal "
-  "properties using recognised ASTM standards, with three replicates (n = 3) for "
-  "each property so the results would be statistically reliable. Table 4 lists the "
-  "main equipment used across the fabrication and characterization programme.",
-  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "The panels were put through their physical, mechanical and thermal paces "
+  "against recognised ASTM standards, three replicates (n = 3) per property to "
+  "keep the numbers honest. Table 4 lists the main kit used across making and "
+  "testing the panels.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Principal equipment used for fabrication and characterization.")
 make_table(doc,
     ["Equipment", "Purpose", "Standard / Remark"],
@@ -1295,30 +1273,28 @@ img_row(doc, [(f'{PHOTOS}/thermal_test_nobinder.jpg', '(a) S2 (no binder)'),
                  "using the TR-3 probe: (a) S2, (b) S3 and (c) S4.")
 
 heading(doc, "3.6.6  Scanning Electron Microscopy (SEM)", level=3)
-P(doc, "The surface and microstructure of two representative panels \u2014 the fine "
-  "binder-less panel (S1) and the 90:10 corn-starch panel (S3) \u2014 were examined "
-  "by scanning electron microscopy (SEM). Small fragments of about 5 \u00d7 5 mm "
-  "were cut from the oven-dried panels, mounted on aluminium stubs with conductive "
-  "carbon tape and sputter-coated with gold to stop them charging under the "
-  "electron beam. We took micrographs at several magnifications, capturing both "
-  "the overall fibre arrangement at low magnification and the binder\u2013fibre "
-  "interface and pore architecture at high magnification. The aim was to tie the "
-  "macroscopic physical, mechanical and thermal measurements back to the "
-  "microstructure \u2014 in particular the degree of inter-fibre bonding, the "
-  "amount of pore volume and whether a continuous binder matrix had formed. The "
-  "results and their interpretation are given in Section 4.8.",
+P(doc, "Two panels \u2014 the fine binder-less S1 and the 90:10 corn-starch S3 "
+  "\u2014 went under the scanning electron microscope (SEM) to read their surface "
+  "and microstructure. We cut small chips, about 5 \u00d7 5 mm, from the oven-dried "
+  "panels, stuck them on aluminium stubs with conductive carbon tape, and "
+  "sputter-coated them with gold so they would not charge under the beam. "
+  "Micrographs came at several magnifications \u2014 the overall fibre layout at "
+  "low magnification, the binder\u2013fibre interface and pore structure up close. "
+  "The point was to connect the big-picture physical, mechanical and thermal "
+  "numbers back to what the microstructure was doing: how well the fibres bonded, "
+  "how much pore volume survived, and whether a continuous binder matrix had "
+  "formed. Results and read-out are in Section 4.8.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "3.7  Statistical Analysis", level=2)
-P(doc, "Every physical, mechanical and thermal measurement was carried out in "
-  "triplicate (n = 3) on independently prepared specimens of each formulation. "
-  "Results are reported as the mean of the three replicates, with the spread shown "
-  "as the sample standard deviation (\u00b1 1 SD) on the error bars of the bar "
-  "charts in Chapter 4. Running three replicates lets us estimate both the typical "
-  "value and the scatter of each property, and it keeps any one odd specimen from "
-  "skewing the picture. For the thermal-conductivity tests we also used the "
-  "instrument's goodness-of-fit value (Syx) as an acceptance check, treating "
-  "readings below 2.0 as reliable.",
+P(doc, "Every physical, mechanical and thermal measurement was run in triplicate "
+  "(n = 3) on separately made specimens of each formulation. We report the mean of "
+  "the three, with the spread shown as the sample standard deviation (\u00b1 1 SD) "
+  "on the error bars of the Chapter 4 charts. Three replicates give us both the "
+  "typical value and the scatter, and stop one freak specimen from running away "
+  "with the result. For the thermal-conductivity runs we leaned on the "
+  "instrument's goodness-of-fit number (Syx) as a sanity check, taking anything "
+  "below 2.0 as trustworthy.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
@@ -1334,25 +1310,24 @@ heading(doc, "RESULTS AND DISCUSSION", level=1, space_before=2)
 
 # ---- 4.1 Moisture Content ----
 heading(doc, "4.1  Moisture Content", level=2)
-P(doc, "The moisture content results (ASTM D4442, n = 3) are given in Table 5 and "
-  "plotted in Figure 14. Moisture content climbed steadily as the particles got "
-  "finer and the starch fraction grew. The coarse binder-less panel S1 had the "
-  "lowest mean MC at 9.94 %, which fits its open, very porous structure, while the "
-  "high-starch panel S4 had the highest at 41.18 %, a reflection of how readily "
-  "corn starch takes up water. The fine binder-less panel S2 (18.67 %) and the "
-  "90:10 panel S3 (23.93 %) sat in between, in line with their larger surface area "
-  "and moderate starch content respectively.",
+P(doc, "Moisture content (ASTM D4442, n = 3) lands in Table 5 and Figure 14. The "
+  "numbers climb steadily as the particles get finer and the starch fraction "
+  "grows. The coarse binder-less S1 sat lowest at 9.94 % \u2014 no surprise for "
+  "such an open, porous panel \u2014 while the high-starch S4 topped out at "
+  "41.18 %, a nod to how thirstily corn starch pulls in water. S2 (18.67 %) and "
+  "the 90:10 S3 (23.93 %) landed in between, matching their bigger surface area "
+  "and middling starch content.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "In practical terms, how much moisture a panel holds at the manufacturing "
-  "stage matters for both its dimensional stability and its thermal performance. "
-  "The high residual moisture in S4 tells us that the starch-rich matrix keeps "
-  "hold of water even after oven drying. That water softens the binder and lowers "
-  "strength (Section 4.4), and it also hurts the insulation, since water-filled "
-  "pores conduct heat much more readily than air-filled ones (Section 4.5). The "
-  "steady rise in moisture content from S1 to S4 therefore hints at the trends "
-  "seen later in the mechanical and thermal tests, and it makes the case for "
-  "limiting the hygroscopic binder fraction and adding a hydrophobic treatment in "
-  "future work.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "At the manufacturing stage, how much moisture a panel holds is no small "
+  "thing \u2014 it drives both dimensional stability and thermal performance. "
+  "S4's stubborn residual moisture says the starch-rich matrix hangs onto water "
+  "even after oven drying. That trapped water softens the binder and saps strength "
+  "(Section 4.4), and it dents the insulation too, since water-filled pores pass "
+  "heat far more easily than air-filled ones (Section 4.5). So the steady climb in "
+  "moisture from S1 to S4 quietly foretells the mechanical and thermal trends to "
+  "come \u2014 and makes the case for reining in the thirsty binder fraction and "
+  "adding a hydrophobic treatment down the line.",
+  align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Moisture content measurements (n = 3 per sample) \u2014 ASTM D4442.")
 make_table(doc,
@@ -1367,13 +1342,12 @@ img(doc, f'{CHARTS}/Fig14_Moisture_Content.png', 5.4,
 
 # ---- 4.2 Bulk Density ----
 heading(doc, "4.2  Bulk Density", level=2)
-P(doc, "The bulk-density results (ASTM D1037, n = 3) are in Table 6 and Figure 15. "
-  "The coarse panel S1 was the densest at 1.087 g/cm\u00b3 because its large "
-  "particles pack together compactly, whereas the high-starch panel S4 was the "
-  "least dense at 0.868 g/cm\u00b3, being a thinner panel with a porous "
-  "starch-rich matrix. The 90:10 panel S3 (0.992 g/cm\u00b3) came out denser than "
-  "the fine binder-less panel S2 (0.900 g/cm\u00b3), which suggests that even a "
-  "modest 10 % starch addition fills inter-particle gaps and improves compaction.",
+P(doc, "Bulk density (ASTM D1037, n = 3) shows up in Table 6 and Figure 15. The "
+  "coarse S1 was densest at 1.087 g/cm\u00b3, its big particles packing tight, "
+  "while the high-starch S4 came in lightest at 0.868 g/cm\u00b3 \u2014 a thinner "
+  "panel with a porous, starch-heavy matrix. The 90:10 S3 (0.992 g/cm\u00b3) "
+  "edged out the fine binder-less S2 (0.900 g/cm\u00b3), a hint that even a modest "
+  "10 % starch fills the gaps between particles and packs them better.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Bulk-density measurements (n = 3 per sample) \u2014 ASTM D1037.")
 make_table(doc,
@@ -1388,18 +1362,17 @@ img(doc, f'{CHARTS}/Fig15_Bulk_Density.png', 5.4,
 
 # ---- 4.3 Water Absorption ----
 heading(doc, "4.3  Water Absorption", level=2)
-P(doc, "Water-absorption results (ASTM D570, 2-hour soak, n = 3) are shown in "
-  "Table 7 and Figure 16. Every sample took up a lot of water, as untreated "
-  "lignocellulosic materials tend to, but the uptake fell off clearly as the "
-  "binder fraction rose. The binder-less coarse panel S1 absorbed the most "
-  "(657.89 %) thanks to its open porous structure, followed by S2 (522.86 %) and "
-  "S3 (507.14 %). The high-starch panel S4 absorbed the least (280.00 %): even "
-  "though starch itself is hydrophilic, the larger starch fraction plugs the open "
-  "pores and cuts the accessible porosity. These figures line up with the "
-  "450\u2013555 % range Salas-Ruiz et al. [2] reported for binder-less "
-  "water-hyacinth boards, and they confirm that moisture resistance is still the "
-  "main weakness to fix \u2014 most likely with a hydrophobic treatment such as "
-  "the beeswax coating used by Chaireh et al. [5].",
+P(doc, "Water absorption (ASTM D570, 2-hour soak, n = 3) is in Table 7 and "
+  "Figure 16. Every sample drank deeply \u2014 that is untreated lignocellulose "
+  "for you \u2014 but the uptake dropped off clearly as the binder fraction "
+  "climbed. The binder-less coarse S1 soaked up the most (657.89 %) on the back of "
+  "its open pores, then S2 (522.86 %) and S3 (507.14 %). The high-starch S4 took "
+  "in the least (280.00 %): starch is hydrophilic, sure, but the bigger starch "
+  "fraction plugs the open pores and shrinks the porosity water can reach. These "
+  "figures track the 450\u2013555 % range Salas-Ruiz et al. [2] reported for "
+  "binder-less water-hyacinth boards, and they hammer home that moisture "
+  "resistance is still the weak spot to fix \u2014 most likely with a hydrophobic "
+  "treatment like the beeswax coating Chaireh et al. [5] used.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Water absorption (n = 3 per sample, 2-hour soak) \u2014 ASTM D570.")
 make_table(doc,
@@ -1414,33 +1387,32 @@ img(doc, f'{CHARTS}/Fig16_Water_Absorption.png', 5.4,
 
 # ---- 4.4 UCT ----
 heading(doc, "4.4  Unconfined Compressive Strength", level=2)
-P(doc, "Representative stress\u2013strain data (A\u2080 = 706.86 mm\u00b2) are listed "
+P(doc, "Representative stress\u2013strain data (A\u2080 = 706.86 mm\u00b2) sit "
   "in Table 8, the triplicate strength summary in Table 9, and the stress\u2013"
   "strain curves and strength comparison in Figures 17 and 18. Every tested sample "
-  "failed at the same axial strain of 16 % (Reading 8), which tells us the base "
-  "biomass skeleton sets the failure strain regardless of how much binder is "
-  "present. The 90:10 panel S3 reached the highest unconfined compressive strength "
-  "(q\u1d64 = 186.0 kPa), 97 % more than the fine binder-less panel S2 (94.4 kPa), "
-  "confirming 10 wt% corn starch as the optimal binder content. The high-starch "
-  "panel S4 was the surprise here, coming out weakest at 26.8 kPa: too much starch "
-  "forms a continuous but soft, plasticised matrix, made softer still by its very "
-  "high moisture content (41.18 %), so the load ends up carried by the weak binder "
-  "instead of being passed efficiently from fibre to fibre. This echoes the "
-  "optimum-loading behaviour seen in other water-hyacinth composites, where "
-  "intermediate fibre/binder ratios give the best strength [4], [10].",
+  "gave way at the same 16 % axial strain (Reading 8) \u2014 a tell that the base "
+  "biomass skeleton, not the binder, sets the failure strain. The 90:10 panel S3 "
+  "hit the top unconfined compressive strength (q\u1d64 = 186.0 kPa), 97 % above "
+  "the fine binder-less panel S2 (94.4 kPa), which nails 10 wt% corn starch as the "
+  "best binder content. The high-starch panel S4 was the twist: weakest of the lot "
+  "at 26.8 kPa. Pile on too much starch and you get a continuous but soft, "
+  "plasticised matrix, softer still for its 41.18 % moisture, so the load rides on "
+  "the weak binder instead of passing cleanly from fibre to fibre. It echoes the "
+  "optimum-loading story seen in other water-hyacinth composites, where middling "
+  "fibre/binder ratios win on strength [4], [10].",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "The matching undrained shear strengths (S\u1d64 = q\u1d64/2) of 47.2, 93.0 "
-  "and 13.4 kPa for S2, S3 and S4 follow the same order and confirm that S3 "
-  "carries roughly twice the load of the binder-less panel. The fact that all "
-  "three samples failed at 16 % strain is worth dwelling on: it means the "
-  "cellulosic biomass skeleton, not the binder, controls how the panel deforms up "
-  "to failure, while the binder sets how much stress that skeleton can take. "
-  "Practically, the 90:10 panel strikes the best balance of stiffness and "
-  "integrity for handling, transport and installation, whereas the binder-less "
-  "panel \u2014 insulation-grade though it is \u2014 would be more likely to chip "
-  "at the edges. These strengths are modest next to structural materials, but they "
-  "are perfectly adequate for a non-load-bearing insulation panel and comfortably "
-  "exceed the cohesion needed for self-supporting wall infill.",
+P(doc, "The matching undrained shear strengths (S\u1d64 = q\u1d64/2) \u2014 47.2, "
+  "93.0 and 13.4 kPa for S2, S3 and S4 \u2014 line up in the same order and "
+  "confirm that S3 carries roughly double the load of the binder-less panel. That "
+  "shared 16 % failure strain is worth a second look: it means the cellulosic "
+  "skeleton governs how the panel deforms up to failure, while the binder only "
+  "sets how much stress that skeleton can shoulder. In practice, the 90:10 panel "
+  "hits the sweet spot of stiffness and integrity for handling, transport and "
+  "fitting, whereas the binder-less panel \u2014 insulation-grade though it is "
+  "\u2014 would chip at the edges more readily. None of these strengths rival "
+  "structural materials, but they are more than enough for a non-load-bearing "
+  "insulation panel and clear the cohesion needed for self-supporting wall infill "
+  "with room to spare.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_cap(doc, "Representative stress\u2013strain data (Reading 8 = failure at "
@@ -1481,32 +1453,30 @@ img(doc, f'{CHARTS}/Fig17_UCT_Strength.png', 5.4,
 
 # ---- 4.5 Thermal Conductivity ----
 heading(doc, "4.5  Thermal Conductivity", level=2)
-P(doc, "Thermal-conductivity results (KD2 Pro TR-3, ASTM D5334, n = 3) are in "
-  "Table 10 and Figure 19. Both the fine binder-less panel S2 (K = 0.0577 "
-  "W/m\u00b7K) and the 90:10 panel S3 (K = 0.0608 W/m\u00b7K) come in under the "
-  "0.065 W/m\u00b7K insulation-grade limit of ASTM C168, so both qualify as "
-  "insulation-grade. The high-starch panel S4 was three times more conductive "
-  "(0.1846 W/m\u00b7K), which puts it well outside that grade. The reason is the "
-  "dense, continuous starch matrix filling the air voids that do the insulating, "
-  "made worse by the panel's very high moisture content (41.18 %); since water "
-  "conducts heat roughly 23 times better than air, moisture-filled pores send the "
-  "effective conductivity up sharply. This is the same moisture-driven "
-  "degradation Jeon et al. [7] saw in fibrous insulation. All goodness-of-fit "
-  "values (Syx) were below 2.0, so the measurements are sound. The S2 and S3 "
-  "values hold their own against the 0.047\u20130.065 W/m\u00b7K range reported by "
-  "Salas-Ruiz et al. [2] and are not far off conventional glass wool "
-  "(\u2248 0.034 W/m\u00b7K [7]).",
+P(doc, "Thermal conductivity (KD2 Pro TR-3, ASTM D5334, n = 3) is in Table 10 and "
+  "Figure 19. Both the fine binder-less S2 (K = 0.0577 W/m\u00b7K) and the 90:10 "
+  "S3 (K = 0.0608 W/m\u00b7K) slip under the 0.065 W/m\u00b7K insulation-grade line "
+  "of ASTM C168 \u2014 both make the grade. The high-starch S4 was three times as "
+  "conductive (0.1846 W/m\u00b7K), well outside it. Blame the dense, continuous "
+  "starch matrix choking the air voids that do the insulating, made worse by the "
+  "panel's 41.18 % moisture; with water carrying heat about 23 times better than "
+  "air, water-filled pores shove the effective conductivity right up. It is the "
+  "same moisture-driven slump Jeon et al. [7] saw in fibrous insulation. Every "
+  "goodness-of-fit value (Syx) came in below 2.0, so the readings stand. The S2 "
+  "and S3 figures hold their own against the 0.047\u20130.065 W/m\u00b7K range "
+  "Salas-Ruiz et al. [2] reported, and they are not far off conventional glass "
+  "wool (\u2248 0.034 W/m\u00b7K [7]).",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "The thermal results make most sense when viewed as a contest between "
-  "trapped air and the solid and liquid phases inside the panel. In the fine "
-  "binder-less and 90:10 panels (S2, S3) a large share of the inter-particle voids "
-  "stays full of air, and because still air is such a good insulator the effective "
-  "conductivity stays low. Push the starch up to 30 % (S4) and the gelatinised "
-  "binder fills those voids with a continuous solid, while the panel also clings "
-  "to a high moisture content (41.18 %). Both of those swap insulating air for "
-  "much more conductive phases, which is why K jumps three-fold. This reading sits "
-  "comfortably with the bulk-density and moisture-content trends, and the SEM "
-  "analysis in Section 4.8 backs it up at the microstructural level.",
+P(doc, "The thermal numbers click into place once you picture a tug-of-war between "
+  "trapped air and the solid and liquid stuff packed around it. In the fine "
+  "binder-less and 90:10 panels (S2, S3), most of the gaps between particles stay "
+  "full of air \u2014 and since still air insulates so well, the effective "
+  "conductivity stays low. Crank the starch to 30 % (S4) and the gelatinised "
+  "binder floods those gaps with continuous solid, while the panel also clings to "
+  "41.18 % moisture. Both moves trade insulating air for far more conductive "
+  "phases, which is why K triples. That reading fits the bulk-density and moisture "
+  "trends neatly, and the SEM work in Section 4.8 backs it up down at the "
+  "microstructure.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Thermal-conductivity measurements (n = 3 per sample) \u2014 "
         "KD2 Pro TR-3 / ASTM D5334.")
@@ -1524,15 +1494,14 @@ img(doc, f'{CHARTS}/Fig18_Thermal_Conductivity.png', 5.4,
 
 # ---- 4.6 Consolidated ----
 heading(doc, "4.6  Consolidated Summary and Optimal Formulation", level=2)
-P(doc, "Table 11 brings together the mean values from all the characterization "
-  "tests. Weighing up the two things that matter most \u2014 insulation-grade "
-  "thermal conductivity and enough mechanical strength \u2014 the 90:10 "
-  "biomass:starch panel (S3) comes out as the best all-round formulation: it gives "
-  "the highest compressive strength (186.0 kPa) while staying insulation-grade "
-  "(0.0608 W/m\u00b7K). The fine binder-less panel S2 is also insulation-grade but "
-  "only half as strong, and the high-starch panel S4 has the best water resistance "
-  "yet fails on both thermal and mechanical counts. In short, 10 wt% corn starch "
-  "is the optimal binder content for this system.",
+P(doc, "Table 11 gathers the mean values from every test. Weigh the two things "
+  "that really count \u2014 insulation-grade conductivity and enough strength to "
+  "handle \u2014 and the 90:10 biomass:starch panel (S3) comes out on top: best "
+  "compressive strength (186.0 kPa) while still insulation-grade (0.0608 "
+  "W/m\u00b7K). The fine binder-less S2 is insulation-grade too, but only half as "
+  "strong; the high-starch S4 resists water best yet flops on both thermal and "
+  "mechanical fronts. Bottom line: 10 wt% corn starch is the right binder content "
+  "for this system.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Consolidated results \u2014 all tests (mean values, n = 3). "
         "Green = best mechanical / insulation grade.")
@@ -1556,20 +1525,18 @@ print("Chapter 4 added.")
 
 # ---- 4.7 Comparison with conventional & reported materials ----
 heading(doc, "4.7  Comparison with Conventional and Reported Materials", level=2)
-P(doc, "To judge how much the results matter in practice, Table 12 sets the "
-  "best-performing formulation (S3) and the binder-less fine panel (S2) against "
-  "conventional insulation and against water-hyacinth composites from the "
-  "literature. The conductivities of S2 (0.0577 W/m\u00b7K) and S3 (0.0608 "
-  "W/m\u00b7K) are higher than those of optimised commercial insulants such as "
-  "glass wool (\u2248 0.034 W/m\u00b7K [7]) and EPS (\u2248 0.035\u20130.040 "
-  "W/m\u00b7K), but they sit in the same insulation-grade band and match or beat "
-  "several reported water-hyacinth composites \u2014 for instance the WH\u2013"
+P(doc, "To see how much the results matter in the real world, Table 12 stacks the "
+  "best performer (S3) and the binder-less fine panel (S2) against conventional "
+  "insulation and against water-hyacinth composites from the literature. S2 "
+  "(0.0577 W/m\u00b7K) and S3 (0.0608 W/m\u00b7K) sit above polished commercial "
+  "insulants like glass wool (\u2248 0.034 W/m\u00b7K [7]) and EPS (\u2248 "
+  "0.035\u20130.040 W/m\u00b7K), but they land in the same insulation-grade band "
+  "and match or beat several reported water-hyacinth composites \u2014 the WH\u2013"
   "cement composite of Philip and Rakendu (0.0765 W/m\u00b7K [3]) and the WH\u2013"
-  "bagasse\u2013epoxy composite of Anjani et al. (0.1987 W/m\u00b7K [6]). What "
-  "really sets the present panels apart is that they reach this performance with "
-  "nothing more than a biodegradable corn-starch binder \u2014 no synthetic resin, "
-  "no cement \u2014 which gives them a clear edge on biodegradability and embodied "
-  "carbon.",
+  "bagasse\u2013epoxy of Anjani et al. (0.1987 W/m\u00b7K [6]), for instance. The "
+  "real differentiator? These panels get there on nothing but a biodegradable "
+  "corn-starch binder \u2014 no synthetic resin, no cement \u2014 which hands them "
+  "a clear lead on biodegradability and embodied carbon.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Comparison of the present bio-composites with conventional and "
         "reported insulation materials.")
@@ -1586,37 +1553,36 @@ make_table(doc,
      ["S4 (this work)", "0.1846", "Corn starch (70:30)", "Present study"]],
     col_widths=[1.9, 1.2, 1.9, 1.6], font_size=9.5,
     highlight={(6,0):'E2EFDA',(6,1):'E2EFDA',(7,0):'E2EFDA',(7,1):'E2EFDA'})
-P(doc, "The comparison confirms that the 90:10 corn-starch panel (S3) is a "
-  "credible, fully bio-based insulation candidate: it stays within the "
-  "insulation-grade band of binder-less water-hyacinth boards while being far "
-  "tougher mechanically, and it beats both cement- and epoxy-bound water-hyacinth "
-  "composites on thermal conductivity.",
+P(doc, "The comparison settles it: the 90:10 corn-starch panel (S3) is a real, "
+  "fully bio-based insulation contender \u2014 it holds the insulation-grade band "
+  "of binder-less water-hyacinth boards while being far tougher, and it beats both "
+  "cement- and epoxy-bound water-hyacinth composites on conductivity.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 # ---- 4.8 SEM Morphological Analysis (with actual micrographs) ----
 heading(doc, "4.8  SEM Morphological Analysis", level=2)
-P(doc, "Scanning electron microscopy was carried out on the fine binder-less panel "
-  "(S1) and the 90:10 starch-bound panel (S3) to draw a direct line between their "
-  "microstructure and the macroscopic thermal, mechanical and moisture behaviour "
-  "measured in Sections 4.1\u20134.5. Several micrographs were taken at different "
-  "magnifications for each sample; the full sets are shown and discussed below.",
+P(doc, "We put the fine binder-less S1 and the 90:10 starch-bound S3 under the "
+  "scanning electron microscope to draw a straight line between what the "
+  "microstructure is doing and the thermal, mechanical and moisture behaviour "
+  "measured back in Sections 4.1\u20134.5. Each sample was imaged at a range of "
+  "magnifications; the full sets follow, with discussion.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "4.8.1  Sample S1 \u2014 Fine Binder-less Panel", level=3)
-P(doc, "The SEM micrographs of S1 (Figures 20\u201324) show a very open, porous "
-  "fibre network, just what you would expect from a binder-less lignocellulosic "
-  "composite. At low magnification, randomly oriented biomass fibres and fragments "
-  "sit amid large inter-particle voids, with no continuous matrix phase in sight "
-  "\u2014 clear proof that there is no binder. The fibres keep their naturally "
-  "tubular, sponge-like cross-section, a signature of water-hyacinth petiole "
-  "tissue, which adds yet more trapped air both inside the fibre lumen and between "
-  "the fibres. Zoom in and the fibre surfaces look rough and uncoated, with cell-"
-  "wall microfibrils on show; the fibres touch only by friction and interlocking, "
-  "which fits the fairly modest compressive strength of 94.4 kPa measured for S1. "
-  "That generous void space is exactly what gives S1 its excellent insulating "
-  "performance (K = 0.0577 W/m\u00b7K), as still air trapped in the pores holds "
-  "back heat conduction. The same open structure is also why it drinks up so much "
-  "water (522.86 %): the interconnected pores let water in freely.",
+P(doc, "S1's micrographs (Figures 20\u201324) show an open, porous fibre network "
+  "\u2014 exactly what a binder-less lignocellulosic composite should look like. "
+  "At low magnification, biomass fibres and fragments lie every which way among "
+  "big inter-particle voids, and there is no continuous matrix anywhere in sight "
+  "\u2014 plain proof that no binder is present. The fibres keep their naturally "
+  "tubular, sponge-like cross-section, the tell-tale of water-hyacinth petiole "
+  "tissue, which stashes even more trapped air, both inside the fibre lumen and "
+  "between fibres. Zoom in and the fibre surfaces are rough and bare, cell-wall "
+  "microfibrils on display; fibres meet only by friction and interlocking, which "
+  "squares with the fairly modest 94.4 kPa S1 managed in compression. All that "
+  "void space is precisely what makes S1 such a good insulator (K = 0.0577 "
+  "W/m\u00b7K) \u2014 still air in the pores stalls heat conduction. And that same "
+  "open structure is why it drinks up so much water (522.86 %): the linked-up "
+  "pores wave it straight in.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 img_row(doc,
@@ -1640,29 +1606,27 @@ img(doc, f'{PHOTOS}/sem_s1_04.jpg', 5.0,
     "showing purely mechanical interlocking with no binder bridging between fibres.")
 
 heading(doc, "4.8.2  Sample S3 \u2014 Fine 90:10 Corn-Starch Panel", level=3)
-P(doc, "The SEM micrographs of S3 (Figures 25\u201330) tell a very different story. "
-  "At low magnification a thin but continuous gelatinised-starch matrix can be "
-  "seen coating the fibre surfaces and bridging the points where fibres meet, "
-  "which confirms that the corn-starch binder gelatinised and formed a film as "
-  "intended. The fibres are still the dominant structural phase and a good deal "
-  "of inter-fibre porosity survives, which is why S3 still manages an "
-  "insulation-grade thermal conductivity (K = 0.0608 W/m\u00b7K), only a touch "
-  "above the binder-less S1 (0.0577 W/m\u00b7K). At higher magnification the "
-  "starch film shows up as discrete bridges and menisci at fibre\u2013fibre "
-  "junctions, acting as load-transfer points that explain the much higher "
-  "compressive strength of 186.0 kPa, a 97 % gain over S1.",
+P(doc, "S3's micrographs (Figures 25\u201330) tell a very different story. At low "
+  "magnification you can see a thin but continuous gelatinised-starch matrix "
+  "coating the fibres and bridging the spots where they meet \u2014 confirmation "
+  "that the corn starch gelatinised and laid down a film, just as planned. Fibres "
+  "are still the main structural phase and plenty of inter-fibre porosity "
+  "survives, which is why S3 still scrapes in at insulation grade (K = 0.0608 "
+  "W/m\u00b7K), only a hair above binder-less S1 (0.0577 W/m\u00b7K). Crank up the "
+  "magnification and the starch shows up as discrete bridges and menisci at "
+  "fibre\u2013fibre junctions, working as load-transfer points \u2014 which is "
+  "what lifts the compressive strength to 186.0 kPa, a 97 % gain over S1.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "The starch bridges also partly seal the open pore throats, trimming the "
-  "accessible pore volume and bringing water absorption down a little, from "
-  "522.86 % (S1) to 507.14 % (S3). The starch film is itself hygroscopic, which is "
-  "why S3 holds a higher equilibrium moisture content (23.93 % against 18.67 %), "
-  "in keeping with the literature on starch\u2013fibre composites [5], [8]. There "
-  "are no fibre pull-out cavities to be seen, which suggests the gelatinised "
-  "starch sticks well to the hydroxyl-rich cellulosic fibre surface. All told, the "
-  "SEM analysis shows that 10 wt% corn starch lays down a thin, well-spread binder "
-  "film that strengthens the inter-fibre bonds without really clogging the "
-  "macropores that do the insulating \u2014 which is what makes the 90:10 "
-  "formulation perform so well on both fronts.",
+P(doc, "Those starch bridges also partly seal the open pore throats, shaving down "
+  "the pore volume water can reach and nudging absorption from 522.86 % (S1) to "
+  "507.14 % (S3). The starch film is hygroscopic itself, which is why S3 settles "
+  "at a higher equilibrium moisture content (23.93 % versus 18.67 %) \u2014 right "
+  "in line with the literature on starch\u2013fibre composites [5], [8]. There are "
+  "no fibre pull-out cavities anywhere, a sign the gelatinised starch grips the "
+  "hydroxyl-rich cellulosic surface well. Add it all up and the SEM says 10 wt% "
+  "corn starch lays down a thin, evenly-spread film that tightens the inter-fibre "
+  "bonds without really clogging the macropores doing the insulating \u2014 which "
+  "is exactly why the 90:10 mix wins on both counts.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 img_row(doc,
@@ -1691,9 +1655,8 @@ img_row(doc,
              "bridging adjacent fibres.")
 
 heading(doc, "4.8.3  Comparative Microstructural Observations", level=3)
-P(doc, "Table 13 pulls together the main microstructural observations from the SEM "
-  "work and lines them up against the measured macroscopic properties of S1 and "
-  "S3.",
+P(doc, "Table 13 lines up the headline microstructural observations from the SEM "
+  "work against the measured macroscopic properties of S1 and S3.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 tbl_cap(doc, "Summary of SEM microstructural observations and correlation with "
         "macroscopic properties (S1 vs S3).")
@@ -1725,14 +1688,13 @@ make_table(doc,
       "Some pore throats sealed by starch film",
       "S3 WA slightly lower (507 % vs 523 %)"]],
     col_widths=[1.25, 1.6, 1.7, 2.0], font_size=9.0, zebra=True)
-P(doc, "Together, the SEM evidence backs the conclusion that 10 wt% corn starch is "
-  "the optimal binder loading for this system: it adds just enough bonding to "
-  "roughly double the compressive strength while leaving enough open porosity to "
-  "keep the thermal conductivity insulation-grade. Taking the starch up to 30 wt% "
-  "(S4) would instead give a much denser, more continuous matrix that chokes the "
-  "macro-pores, which fits the three-fold rise in K and the oddly low strength "
-  "caused by the plasticised, moisture-laden starch phase seen for S4 in "
-  "Section 4.4.",
+P(doc, "Pull it together and the SEM backs the verdict: 10 wt% corn starch is the "
+  "right binder load for this system \u2014 just enough bonding to roughly double "
+  "the strength, while leaving enough open porosity to keep the conductivity "
+  "insulation-grade. Push the starch to 30 wt% (S4) and you would get a much "
+  "denser, more continuous matrix smothering the macro-pores \u2014 which is just "
+  "what the three-fold jump in K and S4's oddly feeble strength, from that "
+  "plasticised, moisture-heavy starch phase (Section 4.4), point to.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
@@ -1743,9 +1705,10 @@ heading(doc, "CHAPTER 5", level=1, space_before=0)
 heading(doc, "CONCLUSIONS AND SCOPE FOR FUTURE WORK", level=1, space_before=2)
 
 heading(doc, "5.1  Conclusions", level=2)
-P(doc, "This project showed that invasive waste aquatic biomass from Dal Lake can "
-  "realistically be turned into fully bio-based insulation panels held together "
-  "with a natural corn-starch binder. The main conclusions are:",
+P(doc, "This project showed something simple but useful: invasive waste aquatic "
+  "biomass from Dal Lake really can be turned into fully bio-based insulation "
+  "panels, held together with nothing more than a natural corn-starch binder. The "
+  "main conclusions:",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=2)
 for c in [
     "Four bio-composite panels were successfully fabricated from water hyacinth "
@@ -1811,10 +1774,9 @@ for f in [
     r = pp.add_run(f); r.font.name = FONT; r.font.size = Pt(12)
 
 heading(doc, "5.3  Scale-Up Strategy", level=2)
-P(doc, "The study was done at laboratory scale, but the fabrication route lends "
-  "itself naturally to industrial scale-up using established equipment. A "
-  "continuous manufacturing line for the panels might run through the following "
-  "stages:",
+P(doc, "Everything here was done in the lab, but the make-it route scales up "
+  "naturally on equipment that already exists. A continuous production line for "
+  "the panels might run like this:",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY, space_after=2)
 for s in [
     "Mechanical harvesting: amphibious weed harvesters for large-scale, "
@@ -1834,29 +1796,28 @@ for s in [
     pp.paragraph_format.line_spacing = 1.5
     pp.paragraph_format.space_after = Pt(3)
     r = pp.add_run(s); r.font.name = FONT; r.font.size = Pt(12)
-P(doc, "A line like this would turn a continuous waste stream into a saleable "
-  "construction product, tying lake-restoration work directly to a workable "
-  "manufacturing value chain.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+P(doc, "A line like that turns a steady waste stream into a product you can "
+  "actually sell, hooking lake-restoration work straight onto a workable "
+  "manufacturing chain.", align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 heading(doc, "5.4  Environmental and Economic Significance", level=2)
-P(doc, "The environmental case for this work has two sides. First, putting water "
-  "hyacinth and water lily to use gives an invasive weed a productive end \u2014 "
-  "left to rot, the weed releases methane, a potent greenhouse gas, and returns "
-  "nutrients that keep Dal Lake's eutrophication going. Locking that biomass into "
-  "durable panels effectively keeps its carbon out of circulation for as long as "
-  "the product lasts. Second, swapping petroleum-derived insulants (EPS, PU foam) "
-  "and energy-hungry inorganic ones (glass wool, mineral wool) for a "
-  "biodegradable, plant-based panel cuts the embodied energy and carbon of the "
-  "insulation considerably.",
+P(doc, "The environmental case has two sides. First, putting water hyacinth and "
+  "water lily to work gives an invasive weed a productive ending \u2014 left to "
+  "rot, it leaks methane, a potent greenhouse gas, and hands nutrients back that "
+  "keep Dal Lake's eutrophication rolling. Lock that biomass into durable panels "
+  "and you keep its carbon out of circulation for as long as the panel lasts. "
+  "Second, swap petroleum-based insulants (EPS, PU foam) and energy-hungry "
+  "inorganic ones (glass wool, mineral wool) for a biodegradable, plant-based "
+  "panel and the embodied energy and carbon of the insulation drop sharply.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-P(doc, "The economics are favourable too. The raw material is essentially free and "
-  "plentiful, its removal is already paid for under lake-conservation programmes, "
-  "and the corn-starch binder is a cheap, food-grade commodity. The processing "
-  "route is simple and low-temperature \u2014 drying, grinding, mixing and cold "
-  "pressing \u2014 with no exotic chemicals and no high-pressure or "
-  "high-temperature equipment, so capital and running costs stay low. At the end "
-  "of their life the panels are biodegradable, or they can be pyrolysed for energy "
-  "recovery, closing the material loop in the spirit of the circular economy.",
+P(doc, "The economics stack up too. The raw material is essentially free and "
+  "everywhere, its removal already gets paid for under lake-conservation "
+  "programmes, and the corn-starch binder is a cheap, food-grade commodity. The "
+  "processing is simple and low-temperature \u2014 dry, grind, mix, cold-press "
+  "\u2014 no exotic chemicals, no high-pressure or high-temperature rigs, so "
+  "capital and running costs stay down. And at the end of the line the panels "
+  "either biodegrade or get pyrolysed for energy recovery, closing the material "
+  "loop the way a circular economy is meant to.",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 page_break(doc)
 
