@@ -468,7 +468,7 @@ P(doc,
   "The corn-starch binder was prepared by dispersing starch in distilled water "
   "(\u224815 wt% solids) and heating on a hot plate with continuous magnetic "
   "stirring to 80\u201390 \u00b0C until a translucent, viscous gel formed, "
-  "indicating complete gelatinisation (Figure 2b). On cooling, the dispersed "
+  "indicating complete gelatinisation. On cooling, the dispersed "
   "amylose and amylopectin chains partially re-associate to form a continuous "
   "adhesive film that coats and mechanically bonds biomass particles "
   "(L\u00f3pez et al., 2013). The gel was used immediately after preparation "
@@ -482,7 +482,7 @@ P(doc,
   "specimens (30 mm diameter, 25 mm height) in aluminium moulds. The moulds were "
   "cold-pressed by hand to consolidate the mixture, demoulded, and oven-dried "
   "at 103 \u00b1 2 \u00b0C to constant mass. The complete process flowsheet is "
-  "given in Figure 5. The coarse binder-less specimen (S1) fractured on demoulding "
+  "given in Figure 4. The coarse binder-less specimen (S1) fractured on demoulding "
   "due to insufficient inter-particle cohesion and was excluded from mechanical "
   "and thermal-conductivity tests, but retained for moisture, density and "
   "water-absorption measurements.")
@@ -503,25 +503,6 @@ make_table(doc,
     col_widths=[0.60, 1.18, 1.30, 1.40, 2.17], font_size=10.0)
 
 
-# Equipment photos (2 rows × 2 cols)
-insert_image_row(doc,
-    [(f'{PHOTOS}/mesh_machine.jpg',
-      '(a) Wire-mesh sieve classifier'),
-     (f'{PHOTOS}/starch_gelatinisation.jpg',
-      '(b) Corn-starch gelatinisation on hot plate')],
-    total_width_in=5.6)
-insert_image_row(doc,
-    [(f'{PHOTOS}/thermal_analyser.jpg',
-      '(c) KD2 Pro TR-3 thermal conductivity analyser'),
-     (f'{PHOTOS}/uct_rig.jpg',
-      '(d) Baker Type K12 UCT apparatus')],
-    total_width_in=5.6,
-    label="Figure 2",
-    caption_text="Laboratory equipment used in this study: (a) wire-mesh sieve "
-                 "classifier, (b) corn-starch gelatinisation on hot plate, "
-                 "(c) KD2 Pro TR-3 thermal conductivity analyser, and "
-                 "(d) Baker Type K12 unconfined compression test rig.")
-
 # Flat panel photos
 insert_image_row(doc,
     [(f'{PHOTOS}/coarse_sample.jpg',    '(a) S1 \u2013 coarse, no binder'),
@@ -529,7 +510,7 @@ insert_image_row(doc,
      (f'{PHOTOS}/sample2_9010.jpg',     '(c) S3 \u2013 fine, 90:10'),
      (f'{PHOTOS}/sample3_7030.jpg',     '(d) S4 \u2013 fine, 70:30')],
     total_width_in=6.2,
-    label="Figure 3",
+    label="Figure 2",
     caption_text="Fabricated bio-composite flat panels: (a) S1 (coarse, no binder), "
                  "(b) S2 (fine, no binder), (c) S3 (fine, 90:10 corn starch), "
                  "and (d) S4 (fine, 70:30 corn starch).")
@@ -540,14 +521,14 @@ insert_image_row(doc,
      (f'{PHOTOS}/cyl2_9010.jpg',     '(b) S3 (90:10 starch)'),
      (f'{PHOTOS}/cyl3_7030.jpg',     '(c) S4 (70:30 starch)')],
     total_width_in=5.1,
-    label="Figure 4",
+    label="Figure 3",
     caption_text="Cylindrical specimens (30 mm diameter \u00d7 25 mm height) used "
                  "for unconfined compression testing: (a) S1 (coarse, no binder "
                  "\u2014 fractured on demoulding), (b) S3 (90:10 starch), and "
                  "(c) S4 (70:30 starch).")
 
 insert_image(doc, f'{CHARTS}/Fig06_Process_Flowsheet.png', 5.4,
-    "Figure 5",
+    "Figure 4",
     "Complete process flowsheet for fabrication of bio-composite insulation "
     "panels from waste Dal Lake aquatic biomass.")
 
@@ -582,7 +563,7 @@ P(doc,
   "read times at 25\u201326 \u00b0C. The instrument goodness-of-fit parameter "
   "S\u1d67\u1d7a was recorded; values below 2.0 indicate an acceptable "
   "measurement. Results were compared against the ASTM C168 insulation-grade "
-  "threshold k < 0.065 W m\u207b\u00b9 K\u207b\u00b9. Figure 9 shows the probe "
+  "threshold k < 0.065 W m\u207b\u00b9 K\u207b\u00b9. Figure 8 shows the probe "
   "placement during measurement.")
 P(doc,
   "Scanning electron microscopy (SEM) was performed on the fine binder-less "
@@ -602,7 +583,7 @@ heading(doc, "3.  Results and Discussion")
 heading(doc, "3.1.  Moisture Content and Bulk Density", level=2)
 P(doc,
   "Moisture content increased markedly with both decreasing particle size and "
-  "increasing starch fraction (Table 2, Figure 6a). The coarse binder-less panel "
+  "increasing starch fraction (Table 2, Figure 5a). The coarse binder-less panel "
   "S1 recorded the lowest MC (9.94%) owing to its open, highly porous structure "
   "and rapid oven-drying. The high-starch panel S4 recorded the highest MC "
   "(41.18%), reflecting the strongly hygroscopic nature of gelatinised corn starch. "
@@ -614,7 +595,7 @@ P(doc,
   "(k \u2248 0.60 W m\u207b\u00b9 K\u207b\u00b9) in the pore space "
   "(Jeon et al., 2017).")
 P(doc,
-  "Bulk density (Figure 6b) was highest for the compact coarse panel S1 "
+  "Bulk density (Figure 5b) was highest for the compact coarse panel S1 "
   "(1.087 g cm\u207b\u00b3) and lowest for the starch-rich S4 "
   "(0.868 g cm\u207b\u00b3). The 90:10 panel S3 (0.992 g cm\u207b\u00b3) was "
   "denser than the binder-less S2 (0.900 g cm\u207b\u00b3), indicating that "
@@ -646,14 +627,14 @@ insert_image_row(doc,
      (f'{CHARTS}/Fig15_Bulk_Density.png',
       '(b) Bulk density (g cm\u207b\u00b3)')],
     total_width_in=6.2,
-    label="Figure 6",
+    label="Figure 5",
     caption_text="(a) Mean moisture content and (b) mean bulk density of the "
                  "bio-composite panels (error bars = \u00b1 1 SD).")
 
 heading(doc, "3.2.  Water Absorption", level=2)
 P(doc,
   "All panels exhibited high water uptake characteristic of untreated "
-  "lignocellulosic materials (Table 2, Figure 7), but with a clear decreasing "
+  "lignocellulosic materials (Table 2, Figure 6), but with a clear decreasing "
   "trend as binder fraction increased. The coarse binder-less S1 absorbed the "
   "most (657.89%), followed by S2 (522.86%) and S3 (507.14%); the high-starch "
   "panel S4 absorbed the least (280.00%) because the large starch fraction "
@@ -667,15 +648,15 @@ P(doc,
   "near-term option.")
 
 insert_image(doc, f'{CHARTS}/Fig16_Water_Absorption.png', 4.4,
-    "Figure 7",
+    "Figure 6",
     "Mean water absorption of the bio-composite panels after a 2-hour full "
     "immersion soak (ASTM D570; error bars = \u00b1 1 SD).")
 
 
 heading(doc, "3.3.  Unconfined Compressive Strength", level=2)
 P(doc,
-  "The stress\u2013strain responses (Figure 8a) and mean compressive strengths "
-  "(Table 3, Figure 8b) show that all tested panels (S2\u2013S4) failed at a "
+  "The stress\u2013strain responses (Figure 7a) and mean compressive strengths "
+  "(Table 3, Figure 7b) show that all tested panels (S2\u2013S4) failed at a "
   "consistent axial strain of approximately 16%. This uniform failure strain "
   "indicates that the cellulosic biomass skeleton governs deformation capacity "
   "irrespective of binder content, while the binder controls the magnitude of "
@@ -721,7 +702,7 @@ insert_image_row(doc,
     [(f'{CHARTS}/Fig19_Stress_Strain.png', '(a) Stress\u2013strain curves'),
      (f'{CHARTS}/Fig17_UCT_Strength.png',  '(b) Mean compressive strength')],
     total_width_in=6.2,
-    label="Figure 8",
+    label="Figure 7",
     caption_text="Mechanical behaviour of panels S2\u2013S4: "
                  "(a) stress\u2013strain curves (representative replicate; "
                  "failure at \u03b5\u1da0 \u2248 16%) and "
@@ -777,13 +758,13 @@ insert_image_row(doc,
      (f'{PHOTOS}/thermal_test_9010.jpg',     '(b) S3 \u2013 90:10 starch'),
      (f'{PHOTOS}/thermal_test_7030.jpg',     '(c) S4 \u2013 70:30 starch')],
     total_width_in=6.0,
-    label="Figure 9",
+    label="Figure 8",
     caption_text="KD2 Pro TR-3 probe embedded in the bio-composite panels "
                  "during thermal conductivity measurement: (a) S2 (binder-less), "
                  "(b) S3 (90:10 starch) and (c) S4 (70:30 starch).")
 
 insert_image(doc, f'{CHARTS}/Fig18_Thermal_Conductivity.png', 4.6,
-    "Figure 10",
+    "Figure 9",
     "Mean thermal conductivity of the bio-composite panels. The dashed line "
     "marks the ASTM C168 insulation-grade threshold "
     "(k = 0.065 W m\u207b\u00b9 K\u207b\u00b9); error bars = \u00b1 1 SD; "
@@ -792,8 +773,8 @@ insert_image(doc, f'{CHARTS}/Fig18_Thermal_Conductivity.png', 4.6,
 
 heading(doc, "3.5.  Microstructural Characterisation (SEM)", level=2)
 P(doc,
-  "SEM micrographs of the fine binder-less panel S2 (Figure 11) and the 90:10 "
-  "corn-starch panel S3 (Figure 12) provide direct microstructural evidence "
+  "SEM micrographs of the fine binder-less panel S2 (Figure 10) and the 90:10 "
+  "corn-starch panel S3 (Figure 11) provide direct microstructural evidence "
   "correlating the macroscopic performance differences to the underlying "
   "fibre-matrix architecture.")
 P(doc,
@@ -819,7 +800,7 @@ insert_image_row(doc,
     [(f'{PHOTOS}/sem_s1_02.jpg', '(c)'),
      (f'{PHOTOS}/sem_s1_03.jpg', '(d)')], total_width_in=5.6)
 insert_image(doc, f'{PHOTOS}/sem_s1_04.jpg', 2.8,
-    "Figure 11",
+    "Figure 10",
     "SEM micrographs of the fine binder-less panel S2 at increasing "
     "magnification: (a)\u2013(b) low magnification showing overall fibre "
     "arrangement and large open macro-pores; (c)\u2013(d) intermediate "
@@ -855,7 +836,7 @@ insert_image_row(doc,
     [(f'{PHOTOS}/sem_s2_09.jpg', '(e)'),
      (f'{PHOTOS}/sem_s2_10.jpg', '(f)')],
     total_width_in=5.6,
-    label="Figure 12",
+    label="Figure 11",
     caption_text="SEM micrographs of the 90:10 corn-starch panel S3 at "
                  "increasing magnification: (a)\u2013(b) low magnification "
                  "showing reduced macro-porosity and starch-coated fibre bundles; "
