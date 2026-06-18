@@ -448,7 +448,9 @@ P(doc, "The corn-starch binder was prepared by dispersing starch in water and he
   "panels in 50 \u00d7 50 mm steel moulds and cylindrical specimens (30 mm diameter, "
   "25 mm height) in aluminium moulds. The filled moulds were cold-pressed by hand to "
   "consolidate the mixture, demoulded, and oven-dried at 103 \u00b1 2 \u00b0C to "
-  "constant mass. Four formulations were produced (Table 1; Fig. 2).",
+  "constant mass. Four formulations were produced (Table 1; Fig. 2), and matching "
+  "cylindrical specimens (30 mm diameter, 25 mm height) were cast from each "
+  "fine-particle formulation for unconfined compression testing (Fig. 3).",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
 tbl_caption(doc, "Table 1", "Bio-composite sample fabrication details.")
@@ -472,7 +474,14 @@ img_row(doc, [(f'{PHOTOS}/coarse_sample.jpg', '(a) S1'),
         cap_text="Fabricated bio-composite panels: (a) S1 (coarse, no binder), "
                  "(b) S2 (fine, no binder), (c) S3 (90:10) and (d) S4 (70:30).")
 
-img(doc, f'{CHARTS}/Fig06_Process_Flowsheet.png', 5.4, "Fig. 3",
+img_row(doc, [(f'{PHOTOS}/cyl1_nobinder.jpg', '(a) S2 (no binder)'),
+              (f'{PHOTOS}/cyl2_9010.jpg', '(b) S3 (90:10)'),
+              (f'{PHOTOS}/cyl3_7030.jpg', '(c) S4 (70:30)')],
+        total_width_in=5.4, label_bold="Fig. 3",
+        cap_text="Prepared cylindrical specimens (30 mm \u00d7 25 mm) used for "
+                 "unconfined compression testing: (a) S2, (b) S3 and (c) S4.")
+
+img(doc, f'{CHARTS}/Fig06_Process_Flowsheet.png', 5.4, "Fig. 4",
     "Process flowsheet for fabrication of the bio-composite insulation panels from "
     "waste aquatic biomass.")
 
@@ -509,13 +518,13 @@ section(doc, "3.  Results and discussion", size=13, space_before=12)
 
 section(doc, "3.1.  Moisture content and bulk density")
 P(doc, "Moisture content increased markedly with both decreasing particle size and "
-  "increasing starch fraction (Table 2, Fig. 4a). The coarse binder-less panel S1 "
+  "increasing starch fraction (Table 2, Fig. 5a). The coarse binder-less panel S1 "
   "recorded the lowest MC (9.94 %) owing to its open, highly porous structure, while "
   "the high-starch panel S4 recorded the highest (41.18 %), reflecting the strongly "
   "hygroscopic nature of corn starch; S2 (18.67 %) and S3 (23.93 %) lay in between. "
   "The progressive rise in MC from S1 to S4 foreshadows the mechanical and thermal "
   "trends discussed below, since residual moisture both plasticises the binder and "
-  "degrades insulation. Bulk density (Fig. 4b) was highest for the compact coarse "
+  "degrades insulation. Bulk density (Fig. 5b) was highest for the compact coarse "
   "panel S1 (1.087 g cm\u207b\u00b3) and lowest for the thinner, starch-rich S4 "
   "(0.868 g cm\u207b\u00b3); the 90:10 panel S3 (0.992 g cm\u207b\u00b3) was denser "
   "than the fine binder-less S2 (0.900 g cm\u207b\u00b3), indicating that a modest "
@@ -535,14 +544,14 @@ make_table(doc,
 
 img_row(doc, [(f'{CHARTS}/Fig14_Moisture_Content.png', '(a) Moisture content'),
               (f'{CHARTS}/Fig15_Bulk_Density.png', '(b) Bulk density')],
-        total_width_in=6.2, label_bold="Fig. 4",
+        total_width_in=6.2, label_bold="Fig. 5",
         cap_text="(a) Mean moisture content and (b) mean bulk density of the "
                  "bio-composite panels (error bars = \u00b1 1 SD).")
 
 section(doc, "3.2.  Water absorption")
 P(doc, "All panels exhibited high water uptake, characteristic of untreated "
   "lignocellulosic materials, but a clear decreasing trend with increasing binder "
-  "fraction was observed (Table 2, Fig. 5). The binder-less coarse panel S1 absorbed "
+  "fraction was observed (Table 2, Fig. 6). The binder-less coarse panel S1 absorbed "
   "the most (657.89 %), followed by S2 (522.86 %) and S3 (507.14 %); the high-starch "
   "panel S4 absorbed the least (280.00 %), because the larger starch fraction fills "
   "open pores and reduces accessible porosity despite starch itself being "
@@ -551,17 +560,17 @@ P(doc, "All panels exhibited high water uptake, characteristic of untreated "
   "moisture resistance remains the principal limitation, motivating a future "
   "hydrophobic treatment such as the beeswax coating of Chaireh et al. (2020).",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
-img(doc, f'{CHARTS}/Fig16_Water_Absorption.png', 4.4, "Fig. 5",
+img(doc, f'{CHARTS}/Fig16_Water_Absorption.png', 4.4, "Fig. 6",
     "Mean water absorption of the bio-composite panels after a 2-h soak "
     "(error bars = \u00b1 1 SD).")
 
 section(doc, "3.3.  Unconfined compressive strength")
 P(doc, "All tested panels failed at a consistent axial strain of about 16 % "
-  "(Fig. 6a), indicating that the biomass skeleton governs the failure strain "
+  "(Fig. 7a), indicating that the biomass skeleton governs the failure strain "
   "irrespective of binder content. The 90:10 panel S3 achieved the highest "
   "unconfined compressive strength (q\u1d64 = 186.0 kPa), a 97 % improvement over the "
   "fine binder-less panel S2 (94.4 kPa), confirming 10 wt% corn starch as the optimal "
-  "binder content (Fig. 6b). Counter-intuitively, the high-starch panel S4 was the "
+  "binder content (Fig. 7b). Counter-intuitively, the high-starch panel S4 was the "
   "weakest (26.8 kPa): an excess of starch produces a continuous but weak, "
   "plasticised matrix that is further softened by its very high moisture content "
   "(41.18 %), so that load is carried by the soft binder rather than transferred "
@@ -573,7 +582,7 @@ P(doc, "All tested panels failed at a consistent axial strain of about 16 % "
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 img_row(doc, [(f'{CHARTS}/Fig19_Stress_Strain.png', '(a) Stress\u2013strain response'),
               (f'{CHARTS}/Fig17_UCT_Strength.png', '(b) Compressive strength')],
-        total_width_in=6.2, label_bold="Fig. 6",
+        total_width_in=6.2, label_bold="Fig. 7",
         cap_text="Mechanical behaviour: (a) stress\u2013strain curves and (b) mean "
                  "unconfined compressive strength of panels S2\u2013S4 "
                  "(error bars = \u00b1 1 SD).")
@@ -582,7 +591,7 @@ section(doc, "3.4.  Thermal conductivity")
 P(doc, "The fine binder-less panel S2 (k = 0.0577 W m\u207b\u00b9 K\u207b\u00b9) and "
   "the 90:10 panel S3 (k = 0.0608 W m\u207b\u00b9 K\u207b\u00b9) both fall below the "
   "0.065 W m\u207b\u00b9 K\u207b\u00b9 insulation-grade threshold of ASTM C168 and "
-  "therefore qualify as insulation-grade materials (Table 3, Fig. 7). The high-starch "
+  "therefore qualify as insulation-grade materials (Table 3, Fig. 9). The high-starch "
   "panel S4 exhibited a three-fold higher conductivity (0.1846 W m\u207b\u00b9 "
   "K\u207b\u00b9), placing it outside the insulation grade. This is attributed to the "
   "dense, continuous starch matrix that fills the air voids responsible for "
@@ -590,9 +599,10 @@ P(doc, "The fine binder-less panel S2 (k = 0.0577 W m\u207b\u00b9 K\u207b\u00b9)
   "conducts heat roughly 23 times better than air, moisture-filled pores sharply "
   "raise the effective conductivity \u2014 the same moisture-driven degradation "
   "reported for fibrous insulants by Jeon et al. (2017). All Syx values were below "
-  "2.0, confirming acceptable measurement quality. The S2 and S3 values are "
-  "competitive with the 0.047\u20130.065 W m\u207b\u00b9 K\u207b\u00b9 range reported "
-  "by Salas-Ruiz et al. (2019) and approach conventional glass wool "
+  "2.0, confirming acceptable measurement quality; representative KD2 Pro TR-3 probe "
+  "readings recorded for the three panels are shown in Fig. 8. The S2 and S3 values "
+  "are competitive with the 0.047\u20130.065 W m\u207b\u00b9 K\u207b\u00b9 range "
+  "reported by Salas-Ruiz et al. (2019) and approach conventional glass wool "
   "(\u2248 0.034 W m\u207b\u00b9 K\u207b\u00b9).",
   align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
@@ -607,7 +617,13 @@ make_table(doc,
     col_widths=[0.9, 1.8, 1.0, 2.6], font_size=9.5,
     highlight={(0, 1): 'E2EFDA', (0, 3): 'E2EFDA',
                (1, 1): 'E2EFDA', (1, 3): 'E2EFDA'})
-img(doc, f'{CHARTS}/Fig18_Thermal_Conductivity.png', 4.6, "Fig. 7",
+img_row(doc, [(f'{PHOTOS}/thermal_test_nobinder.jpg', '(a) S2 (no binder)'),
+              (f'{PHOTOS}/thermal_test_9010.jpg', '(b) S3 (90:10)'),
+              (f'{PHOTOS}/thermal_test_7030.jpg', '(c) S4 (70:30)')],
+        total_width_in=6.0, label_bold="Fig. 8",
+        cap_text="Thermal conductivity test readings from the KD2 Pro TR-3 probe for "
+                 "(a) S2, (b) S3 and (c) S4.")
+img(doc, f'{CHARTS}/Fig18_Thermal_Conductivity.png', 4.6, "Fig. 9",
     "Mean thermal conductivity of the bio-composite panels relative to the ASTM C168 "
     "insulation threshold (error bars = \u00b1 1 SD; S1 excluded).")
 
